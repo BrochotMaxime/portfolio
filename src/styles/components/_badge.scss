@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as *;
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  border: 1px solid $color-border;
+  border-radius: $radius-sm;
+  background-color: $color-neutral-100;
+  color: $color-text-muted;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
