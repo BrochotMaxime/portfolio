@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as *;
+
+.legal-notice-page {
+  padding: $spacing-section 0;
+}
+
+.legal-notice-page__content {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
