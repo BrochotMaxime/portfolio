@@ -1,0 +1,22 @@
+@use "../abstracts/variables" as *;
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - #{$header-height});
+  padding: $spacing-section 0;
+}
+
+.hero-section__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  gap: 1.5rem;
+}
+
+.hero-section__actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
