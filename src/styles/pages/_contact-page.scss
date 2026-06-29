@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as *;
+
+.contact-page {
+  padding: $spacing-section 0;
+}
+
+.contact-page__content {
+  margin-top: 3rem;
+}
+
+.contact-page__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
