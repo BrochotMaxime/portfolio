@@ -16,7 +16,9 @@ Introduces a new section of a page.
 
 ### Responsibility
 
-Provides a consistent heading and optional subtitle for every major section of the portfolio.
+The component renders a semantic section heading and an optional subtitle.
+
+By default, it renders an `h2`, but the heading level can be customized using the `level` prop when needed.
 
 ---
 
