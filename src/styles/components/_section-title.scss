@@ -1,0 +1,9 @@
+.section-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.section-title__subtitle {
+  max-width: 60ch;
+}

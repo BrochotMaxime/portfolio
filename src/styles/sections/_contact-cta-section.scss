@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as *;
+
+.contact-cta-section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.contact-cta-section .section-title {
+  align-items: center;
+}
+
+.contact-cta-section .section-title__subtitle {
+  text-align: center;
+}
+
+.contact-cta-section__actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .contact-cta-section {
+    padding: 3rem 0;
+  }
+}

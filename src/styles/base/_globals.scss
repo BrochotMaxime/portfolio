@@ -1,0 +1,6 @@
+@use "../abstracts/variables" as *;
+
+a:focus-visible {
+  outline: 3px solid $color-hover;
+  outline-offset: 3px;
+}
