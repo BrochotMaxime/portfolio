@@ -1,6 +1,4 @@
-// FeaturedProjectsSection.jsx
-import Badge from "../ui/Badge";
-import Card from "../ui/Card";
+import ProjectCard from "../projects/ProjectCard";
 import SectionTitle from "../ui/SectionTitle";
 
 function FeaturedProjectsSection() {
@@ -13,16 +11,21 @@ function FeaturedProjectsSection() {
         />
 
         <div className="featured-projects-section__grid">
-          <Card>
-            <h3>Trouve ton artisan</h3>
-            <p>Full-stack web application built during my developer training.</p>
+          <ProjectCard
+            title="Trouve ton artisan"
+            description="Full-stack web application built during my developer training, using React, Node.js and MySQL."
+            technologies={["React", "Node.js", "MySQL"]}
+            codeUrl=""
+            demoUrl=""
+          />
 
-            <div>
-              <Badge>React</Badge>
-              <Badge>Node.js</Badge>
-              <Badge>MySQL</Badge>
-            </div>
-          </Card>
+          <ProjectCard
+            title="Portfolio"
+            description="Personal developer portfolio built with React, SCSS and a structured component-based architecture."
+            technologies={["React", "SCSS", "React Router"]}
+            codeUrl=""
+            demoUrl=""
+          />
         </div>
       </div>
     </section>
