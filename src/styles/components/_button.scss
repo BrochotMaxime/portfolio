@@ -9,9 +9,23 @@
   border-radius: $radius-md;
   font: inherit;
   font-weight: 600;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color $transition-fast, color $transition-fast, border-color $transition-fast;
+  transition:
+    background-color $transition-fast,
+    color $transition-fast,
+    border-color $transition-fast,
+    transform $transition-fast;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:focus-visible {
+  outline: 3px solid $color-hover;
+  outline-offset: 3px;
 }
 
 .button--primary {
@@ -19,8 +33,19 @@
   color: $color-surface;
 }
 
+.button--primary:hover {
+  background-color: transparent;
+  color: $color-primary;
+  border-color: $color-primary;
+}
+
 .button--secondary {
   background-color: transparent;
   color: $color-primary;
   border-color: $color-primary;
+}
+
+.button--secondary:hover {
+  background-color: $color-primary;
+  color: $color-surface;
 }
