@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as *;
+
+.about-page {
+  padding: $spacing-section 0;
+}
+
+.about-page__content {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
