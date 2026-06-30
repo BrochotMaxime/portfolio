@@ -1,6 +1,4 @@
-import Badge from "../components/ui/Badge";
-import Button from "../components/ui/Button";
-import Card from "../components/ui/Card";
+import ProjectCard from "../components/projects/ProjectCard";
 import SectionTitle from "../components/ui/SectionTitle";
 
 function ProjectsPage() {
@@ -14,43 +12,29 @@ function ProjectsPage() {
         />
 
         <div className="projects-page__grid">
-          <Card>
-            <h2>Trouve ton artisan</h2>
+          <ProjectCard
+          title="Trouve ton artisan"
+          description="Full-stack web application built during my developer training, using React, Node.js and MySQL."
+          technologies={["React", "Node.js", "MySQL"]}
+          codeUrl=""
+          demoUrl=""
+          />
 
-            <p>
-              Full-stack web application built during my developer training, using React, Node.js and MySQL.
-            </p>
+          <ProjectCard
+            title="Trouve ton artisan"
+            description="Full-stack web application built during my developer training, using React, Node.js and MySQL."
+            technologies={["React", "Node.js", "MySQL"]}
+            codeUrl=""
+            demoUrl=""
+          />
 
-            <div className="projects-page__badges">
-              <Badge>React</Badge>
-              <Badge>Node.js</Badge>
-              <Badge>MySQL</Badge>
-            </div>
-
-            <div className="projects-page__actions">
-              <Button href="">View code</Button>
-              <Button href="" variant="secondary">Live demo</Button>
-            </div>
-          </Card>
-
-          <Card>
-            <h2>Portfolio</h2>
-
-            <p>
-              Personal developer portfolio built with React, SCSS and a structured component-based architecture.
-            </p>
-
-            <div className="projects-page__badges">
-              <Badge>React</Badge>
-              <Badge>SCSS</Badge>
-              <Badge>React Router</Badge>
-            </div>
-
-            <div className="projects-page__actions">
-              <Button href="">View code</Button>
-              <Button href="" variant="secondary">Live demo</Button>
-            </div>
-          </Card>
+          <ProjectCard
+            title="Portfolio"
+            description="Personal developer portfolio built with React, SCSS and a structured component-based architecture."
+            technologies={["React", "SCSS", "React Router"]}
+            codeUrl=""
+            demoUrl=""
+          />
         </div>
       </div>
     </section>
