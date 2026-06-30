@@ -32,16 +32,16 @@ function Footer() {
           </a>
         </div>
 
+        <p className="footer__copyright">
+            &copy; {new Date().getFullYear()} Maxime Brochot. All rights reserved.
+        </p>
+
         <nav className="footer__nav">
           <Link to="/projects">Projects</Link>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/legal-notice">Legal Notice</Link>
         </nav>
-
-        <p className="footer__copyright">
-            &copy; {new Date().getFullYear()} Maxime Brochot. All rights reserved.
-        </p>
       </div>
     </footer>
   );

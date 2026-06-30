@@ -1,0 +1,56 @@
+@use "../abstracts/variables" as *;
+
+.footer {
+  padding: 3rem 0;
+  border-top: 1px solid $color-border;
+  background-color: $color-surface;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer__branding,
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer a {
+  color: $color-text;
+  text-decoration: none;
+}
+
+.footer__role,
+.footer__copyright {
+  color: $color-text-muted;
+}
+
+@media (max-width: 767px) {
+
+  .footer__container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+    gap: .75rem;
+  }
+
+}
