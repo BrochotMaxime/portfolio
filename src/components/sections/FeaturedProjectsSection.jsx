@@ -1,5 +1,7 @@
-import ProjectCard from "../projects/ProjectCard";
 import SectionTitle from "../ui/SectionTitle";
+import ProjectCard from "../projects/ProjectCard";
+
+import { projects } from "../../data/projects";
 
 function FeaturedProjectsSection() {
   return (
@@ -11,21 +13,18 @@ function FeaturedProjectsSection() {
         />
 
         <div className="featured-projects-section__grid">
-          <ProjectCard
-            title="Trouve ton artisan"
-            description="Full-stack web application built during my developer training, using React, Node.js and MySQL."
-            technologies={["React", "Node.js", "MySQL"]}
-            codeUrl=""
-            demoUrl=""
-          />
-
-          <ProjectCard
-            title="Portfolio"
-            description="Personal developer portfolio built with React, SCSS and a structured component-based architecture."
-            technologies={["React", "SCSS", "React Router"]}
-            codeUrl=""
-            demoUrl=""
-          />
+          {projects
+            .filter((project) => project.featured)
+            .map((project) => (
+              <ProjectCard
+                key={project.id}
+                title={project.title}
+                description={project.description}
+                technologies={project.technologies}
+                codeUrl={project.codeUrl}
+                demoUrl={project.demoUrl}
+              />
+            ))}
         </div>
       </div>
     </section>
