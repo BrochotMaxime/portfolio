@@ -22,6 +22,7 @@ function ProjectsPage() {
               technologies={project.technologies}
               codeUrl={project.codeUrl}
               demoUrl={project.demoUrl}
+              slug={project.slug}
             />
           ))}
         </div>

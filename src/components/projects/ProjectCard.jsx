@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 import Badge from "../ui/Badge";
 import Button from "../ui/Button";
 import Card from "../ui/Card";
 
-function ProjectCard({ title, description, technologies, codeUrl, demoUrl }) {
+function ProjectCard({ title, description, technologies, codeUrl, demoUrl, slug }) {
   return (
     <Card>
       <h2>{title}</h2>
@@ -16,25 +18,33 @@ function ProjectCard({ title, description, technologies, codeUrl, demoUrl }) {
       </div>
 
       <div className="project-card__actions">
-        {codeUrl && (
-          <Button 
-            href={codeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View code
-          </Button>
-        )}
+        <div className="project-card__actions-buttons">
+          {codeUrl && (
+            <Button 
+              href={codeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View code
+            </Button>
+          )}
 
-        {demoUrl && (
-          <Button href={demoUrl} 
-            variant="secondary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Live demo
-          </Button>
-        )}
+          {demoUrl && (
+            <Button href={demoUrl} 
+              variant="secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live demo
+            </Button>
+          )}
+        </div>
+
+        {slug && (
+          <Link className="project-card__actions-link" to={`/projects/${slug}`}>
+            Read more
+          </Link>
+        )}        
       </div>
     </Card>
   );
