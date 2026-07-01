@@ -1,32 +1,57 @@
 export const projects = [
   {
     id: 1,
+    slug: "trouve-ton-artisan",
     title: "Trouve ton artisan",
     description:
-      "Full-stack web application built during my developer training, using React, Node.js and MySQL.",
-    technologies: ["React", "Node.js", "MySQL"],
+      "Full-stack web application built during my developer training. The project allows users to search for artisans by category and name, with a React frontend, a Node.js API and a MySQL database.",
+    technologies: ["React", "Node.js", "Express", "MySQL", "Sequelize", "SCSS"],
     codeUrl: "",
     demoUrl: "",
     featured: true,
   },
   {
     id: 2,
+    slug: "portfolio",
     title: "Portfolio",
     description:
-      "Personal developer portfolio built with React, SCSS and a structured component-based architecture.",
-    technologies: ["React", "SCSS", "React Router"],
+      "Personal developer portfolio built with React and SCSS. The project focuses on clean architecture, reusable components, documentation and a maintainable development workflow.",
+    technologies: ["React", "React Router", "SCSS", "Vite", "ESLint", "Prettier"],
     codeUrl: "",
     demoUrl: "",
     featured: true,
   },
   {
     id: 3,
-    title: "Portfolio",
+    slug: "port-de-plaisance-russell",
+    title: "Port de Plaisance Russell",
     description:
-      "Personal developer portfolio built with React, SCSS and a structured component-based architecture.",
-    technologies: ["React", "SCSS", "React Router"],
+      "RESTful API developed during my developer training to manage a marina. The project includes user authentication, CRUD operations, reservations management and API documentation with Swagger.",
+    technologies: ["Node.js", "Express", "MongoDB", "Mongoose", "Swagger", "EJS"],
     codeUrl: "",
     demoUrl: "",
     featured: false,
-  },    
+  },
+  {
+    id: 4,
+    slug: "tifosi",
+    title: "Tifosi",
+    description:
+      "Relational database project designed during my developer training. The project focuses on database modelling, SQL scripting, data integrity and complex queries using MySQL.",
+    technologies: ["MySQL", "SQL", "MySQL Workbench"],
+    codeUrl: "",
+    demoUrl: "",
+    featured: false,
+  },
+  {
+    id: 5,
+    slug: "portfolio-john-doe",
+    title: "Portfolio – John Doe",
+    description:
+      "Responsive portfolio website developed during my developer training. The project focuses on component-based development, client-side routing, reusable UI elements and API integration with Next.js.",
+    technologies: ["Next.js", "React", "Bootstrap", "GitHub API"],
+    codeUrl: "",
+    demoUrl: "",
+    featured: false,
+  }
 ];
