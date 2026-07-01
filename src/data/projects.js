@@ -6,8 +6,8 @@ export const projects = [
     description:
       "Full-stack web application built during my developer training. The project allows users to search for artisans by category and name, with a React frontend, a Node.js API and a MySQL database.",
     technologies: ["React", "Node.js", "Express", "MySQL", "Sequelize", "SCSS"],
-    codeUrl: "",
-    demoUrl: "",
+    codeUrl: "https://github.com/BrochotMaxime/brochot-maxime-devoir-site-trouve-ton-artisan",
+    demoUrl: "https://brochot-maxime-devoir-site-trouve-ton-tmpa.onrender.com/",
     featured: true,
   },
   {
@@ -17,7 +17,7 @@ export const projects = [
     description:
       "Personal developer portfolio built with React and SCSS. The project focuses on clean architecture, reusable components, documentation and a maintainable development workflow.",
     technologies: ["React", "React Router", "SCSS", "Vite", "ESLint", "Prettier"],
-    codeUrl: "",
+    codeUrl: "https://github.com/BrochotMaxime/portfolio",
     demoUrl: "",
     featured: true,
   },
@@ -28,8 +28,8 @@ export const projects = [
     description:
       "RESTful API developed during my developer training to manage a marina. The project includes user authentication, CRUD operations, reservations management and API documentation with Swagger.",
     technologies: ["Node.js", "Express", "MongoDB", "Mongoose", "Swagger", "EJS"],
-    codeUrl: "",
-    demoUrl: "",
+    codeUrl: "https://github.com/BrochotMaxime/brochot-maxime-devoir-api-port-russel",
+    demoUrl: "https://brochot-maxime-devoir-api-port-russel.onrender.com/",
     featured: false,
   },
   {
@@ -39,18 +39,7 @@ export const projects = [
     description:
       "Relational database project designed during my developer training. The project focuses on database modelling, SQL scripting, data integrity and complex queries using MySQL.",
     technologies: ["MySQL", "SQL", "MySQL Workbench"],
-    codeUrl: "",
-    demoUrl: "",
-    featured: false,
-  },
-  {
-    id: 5,
-    slug: "portfolio-john-doe",
-    title: "Portfolio – John Doe",
-    description:
-      "Responsive portfolio website developed during my developer training. The project focuses on component-based development, client-side routing, reusable UI elements and API integration with Next.js.",
-    technologies: ["Next.js", "React", "Bootstrap", "GitHub API"],
-    codeUrl: "",
+    codeUrl: "https://github.com/BrochotMaxime/brochot-maxime-devoir-base-de-donnees-tifosi",
     demoUrl: "",
     featured: false,
   }
