@@ -10,6 +10,24 @@
 .project-card__actions {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   gap: 1rem;
   margin-top: 1.5rem;
+}
+
+.project-card__actions-link {
+  color: $color-primary;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-card__actions-link:hover {
+  text-decoration: underline;
+}
+
+.project-card__actions-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }

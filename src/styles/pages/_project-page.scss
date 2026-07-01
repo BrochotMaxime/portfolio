@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as *;
+
+.project-page {
+  padding: $spacing-section 0;
+}
+
+.project-page__content {
+  margin-top: 3rem;
+}
+
+.project-page__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.project-page__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.project-page__back-link {
+  display: inline-flex;
+  margin-top: 2rem;
+  color: $color-primary;
+  text-decoration: none;
+  font-weight: 600;
+}
