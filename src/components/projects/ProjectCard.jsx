@@ -16,9 +16,25 @@ function ProjectCard({ title, description, technologies, codeUrl, demoUrl }) {
       </div>
 
       <div className="project-card__actions">
-        <Button href={codeUrl}>View code</Button>
+        {codeUrl && (
+          <Button 
+            href={codeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View code
+          </Button>
+        )}
 
-        <Button href={demoUrl} variant="secondary">Live demo</Button>
+        {demoUrl && (
+          <Button href={demoUrl} 
+            variant="secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live demo
+          </Button>
+        )}
       </div>
     </Card>
   );
