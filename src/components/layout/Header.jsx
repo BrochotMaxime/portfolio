@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -9,9 +9,32 @@ function Header() {
         </Link>
 
         <nav className="header__nav">
-          <Link to="/projects">Projects</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "header__link header__link--active" : "header__link"
+            }
+            to="/projects"
+          >
+            Projects
+          </NavLink>
+
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "header__link header__link--active" : "header__link"
+            }
+            to="/about"
+          >
+            About
+          </NavLink>
+
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "header__link header__link--active" : "header__link"
+            }
+            to="/contact"
+          >
+            Contact
+          </NavLink>
         </nav>
 
         <div className="header__mobile">

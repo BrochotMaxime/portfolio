@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -37,10 +37,41 @@ function Footer() {
         </p>
 
         <nav className="footer__nav">
-          <Link to="/projects">Projects</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/legal-notice">Legal Notice</Link>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "footer__link footer__link--active" : "footer__link"
+            }
+            to="/projects"
+          >
+            Projects
+          </NavLink>
+
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "footer__link footer__link--active" : "footer__link"
+            }
+            to="/about"
+          >
+            About
+          </NavLink>
+
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "footer__link footer__link--active" : "footer__link"
+            }
+            to="/contact"
+          >
+            Contact
+          </NavLink>
+          
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "footer__link footer__link--active" : "footer__link"
+            }
+            to="/legal-notice"
+          >
+            Legal Notice
+          </NavLink>
         </nav>
       </div>
     </footer>
