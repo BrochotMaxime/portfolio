@@ -30,7 +30,8 @@ function ProjectCard({ title, description, technologies, codeUrl, demoUrl, slug 
           )}
 
           {demoUrl && (
-            <Button href={demoUrl} 
+            <Button 
+              href={demoUrl} 
               variant="secondary"
               target="_blank"
               rel="noopener noreferrer"

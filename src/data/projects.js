@@ -1,17 +1,6 @@
 export const projects = [
   {
     id: 1,
-    slug: "trouve-ton-artisan",
-    title: "Trouve ton artisan",
-    description:
-      "Full-stack web application built during my developer training. The project allows users to search for artisans by category and name, with a React frontend, a Node.js API and a MySQL database.",
-    technologies: ["React", "Node.js", "Express", "MySQL", "Sequelize", "SCSS"],
-    codeUrl: "https://github.com/BrochotMaxime/brochot-maxime-devoir-site-trouve-ton-artisan",
-    demoUrl: "https://brochot-maxime-devoir-site-trouve-ton-tmpa.onrender.com/",
-    featured: true,
-  },
-  {
-    id: 2,
     slug: "portfolio",
     title: "Portfolio",
     description:
@@ -19,6 +8,17 @@ export const projects = [
     technologies: ["React", "React Router", "SCSS", "Vite", "ESLint", "Prettier"],
     codeUrl: "https://github.com/BrochotMaxime/portfolio",
     demoUrl: "",
+    featured: true,
+  },
+  {
+    id: 2,
+    slug: "trouve-ton-artisan",
+    title: "Trouve ton artisan",
+    description:
+      "Full-stack web application built during my developer training. The project allows users to search for artisans by category and name, with a React frontend, a Node.js API and a MySQL database.",
+    technologies: ["React", "Node.js", "Express", "MySQL", "Sequelize", "SCSS"],
+    codeUrl: "https://github.com/BrochotMaxime/brochot-maxime-devoir-site-trouve-ton-artisan",
+    demoUrl: "https://brochot-maxime-devoir-site-trouve-ton-tmpa.onrender.com/",
     featured: true,
   },
   {
