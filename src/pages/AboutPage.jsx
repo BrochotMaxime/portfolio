@@ -25,15 +25,19 @@ function AboutPage() {
 
           <div className="about-page__content">
             <Card>
-              <h3>Who I am</h3>
+              <h2>Who I am</h2>
 
               <p>
                 I am a web and mobile web developer building my skills through practical projects, structured learning and continuous improvement.
               </p>
+                
+              <p>
+                I enjoy turning ideas into clear and reliable applications while continuously refining both my technical skills and my development practices.
+              </p>
             </Card>
 
             <Card>
-              <h3>Core qualities</h3>
+              <h2>Core qualities</h2>
 
               <div className="about-page__badges">
                 <Badge>Curious</Badge>
@@ -45,12 +49,10 @@ function AboutPage() {
             </Card>
 
             <Card>
-              <h3>Development philosophy</h3>
+              <h2>Development philosophy</h2>
 
               <p>
-                I value clarity, maintainability and thoughtful architecture. Each
-                project is an opportunity to make deliberate decisions and improve
-                the way I design and build web applications.
+                I value clarity, maintainability and thoughtful architecture. Each project is an opportunity to make thoughtful decisions and continuously improve how I design and build web applications.
               </p>
             </Card>
           </div>
