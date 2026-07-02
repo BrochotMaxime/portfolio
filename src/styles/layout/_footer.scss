@@ -30,9 +30,20 @@
   gap: 1.5rem;
 }
 
-.footer a {
+.footer__branding,
+.footer__social a,
+.footer__link {
   color: $color-text;
   text-decoration: none;
+}
+
+.footer__link:hover,
+.footer__link--active {
+  color: $color-primary;
+}
+
+.footer__link--active {
+  font-weight: 600;
 }
 
 .footer__role,
