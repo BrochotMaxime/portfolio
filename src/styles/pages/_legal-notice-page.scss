@@ -9,3 +9,13 @@
   gap: 1.5rem;
   margin-top: 3rem;
 }
+
+.legal-notice-page__link {
+  color: $color-primary;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.legal-notice-page__link:hover {
+  text-decoration: underline;
+}

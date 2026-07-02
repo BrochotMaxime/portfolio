@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 import Card from "../components/ui/Card";
 import SectionTitle from "../components/ui/SectionTitle";
@@ -45,7 +46,11 @@ function LegalNoticePage() {
             <Card>
               <h2>Contact</h2>
               <p>
-                For any request regarding this website, please use the contact page.
+                For any request regarding this website, please use the{" "}
+                <Link className="legal-notice-page__link" to="/contact">
+                  contact page
+                </Link>
+                .
               </p>
             </Card>
           </div>
