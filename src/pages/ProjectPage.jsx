@@ -31,7 +31,9 @@ function ProjectPage() {
               subtitle="The project you are looking for does not exist."
             />
 
-            <Link to="/projects">Back to projects</Link>
+            <Link className="project-page__back-link" to="/projects">
+              Back to projects
+            </Link>
           </div>
         </section>
       </>
@@ -74,7 +76,8 @@ function ProjectPage() {
                     rel="noopener noreferrer"
                   >
                     View code
-                  </Button>)}
+                  </Button>
+                )}
 
                 {project.demoUrl && (
                   <Button 
@@ -90,7 +93,9 @@ function ProjectPage() {
             </Card>
           </div>
 
-          <Link className="project-page__back-link" to="/projects">Back to projects</Link>
+          <Link className="project-page__back-link" to="/projects">
+            Back to projects
+          </Link>
         </div>
       </section>
     </>

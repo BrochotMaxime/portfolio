@@ -12,7 +12,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-top: 1rem;
 }
 
 .project-page__actions {
@@ -28,4 +27,8 @@
   color: $color-primary;
   text-decoration: none;
   font-weight: 600;
+}
+
+.project-page__back-link:hover {
+  text-decoration: underline;
 }
