@@ -18,6 +18,18 @@ function HeroSection() {
 
             <Button to="/contact" variant="secondary">Contact me</Button>
           </div>
+
+          <a
+            className="hero-section__scroll-indicator"
+            href="#featured-projects"
+            aria-label="Scroll to featured projects"
+          >
+            <span className="hero-section__scroll-arrow">⌄</span>
+
+            <span className="hero-section__scroll-text">
+              Scroll
+            </span>
+          </a>
         </div>
       </div>
     </section>

@@ -5,7 +5,7 @@ import { projects } from "../../data/projects";
 
 function FeaturedProjectsSection() {
   return (
-    <section className="featured-projects-section">
+    <section id="featured-projects" className="featured-projects-section">
       <div className="container">
         <SectionTitle
           title="Selected Projects"
