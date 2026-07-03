@@ -4,7 +4,10 @@
   padding: $spacing-section 0;
 }
 
-.project-page__content {
+.project-page__sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   margin-top: 3rem;
 }
 
@@ -18,7 +21,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .project-page__back-link {
