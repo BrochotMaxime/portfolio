@@ -40,6 +40,10 @@ function ProjectPage() {
     );
   }
 
+  const featuredScreenshot = project.screenshots.find(
+    (screenshot) => screenshot.featured
+  );
+
   return (
     <>
       <Helmet>
@@ -52,11 +56,21 @@ function ProjectPage() {
       
       <section className="project-page">
         <div className="container">
-          <SectionTitle
-            level="h1"
-            title={project.title}
-            subtitle={project.description}
-          />
+          <div className="project-page__hero">
+            <SectionTitle
+              level="h1"
+              title={project.title}
+              subtitle={project.description}
+            />
+
+            {featuredScreenshot && (
+              <img
+                className="project-page__featured-image"
+                src={featuredScreenshot.src}
+                alt={featuredScreenshot.alt}
+              />
+            )}
+          </div>
 
           <div className="project-page__sections">
             {project.overview && (
@@ -66,6 +80,16 @@ function ProjectPage() {
                 <p>{project.overview}</p>
               </Card>
             )}
+
+            <Card>
+              <h2>Technology stack</h2>
+
+              <div className="project-page__badges">
+                {project.technologies.map((technology) => (
+                  <Badge key={technology}>{technology}</Badge>
+                ))}
+              </div>
+            </Card>
 
             {project.challenges.length > 0 && (
               <Card>
@@ -96,36 +120,47 @@ function ProjectPage() {
             )}
 
             <Card>
-              <h2>Technologies</h2>
+              <h2>Resources</h2>
 
-              <div className="project-page__badges">
-                {project.technologies.map((technology) => (
-                  <Badge key={technology}>{technology}</Badge>
-                ))}
+              <div className="project-page__actions">
+                {project.codeUrl && (
+                  <Button 
+                    href={project.codeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View code
+                  </Button>
+                )}
+
+                {project.demoUrl && (
+                  <Button 
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    variant="secondary"
+                  >
+                    Live demo
+                  </Button>
+                )}
               </div>
             </Card>
-          </div>
 
-          <div className="project-page__actions">
-            {project.codeUrl && (
-              <Button 
-                href={project.codeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View code
-              </Button>
-            )}
+            {project.screenshots.length > 0 && (
+              <Card>
+                <h2>Screenshots</h2>
 
-            {project.demoUrl && (
-              <Button 
-                href={project.demoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                variant="secondary"
-              >
-                Live demo
-              </Button>
+                <div className="project-page__gallery">
+                  {project.screenshots.map((screenshot) => (
+                    <img
+                      className="project-page__gallery-image"
+                      key={screenshot.src}
+                      src={screenshot.src}
+                      alt={screenshot.alt}
+                    />
+                  ))}
+                </div>
+              </Card>
             )}
           </div>
 
