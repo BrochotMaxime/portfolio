@@ -6,6 +6,7 @@ import Button from "../components/ui/Button";
 import Card from "../components/ui/Card";
 import SectionTitle from "../components/ui/SectionTitle";
 import { projects } from "../data/projects";
+import ProjectGallery from "../components/projects/ProjectGallery";
 
 function ProjectPage() {
   const { slug } = useParams();
@@ -52,21 +53,65 @@ function ProjectPage() {
       
       <section className="project-page">
         <div className="container">
-          <SectionTitle
-            level="h1"
-            title={project.title}
-            subtitle={project.description}
-          />
+          <div className="project-page__hero">
+            <SectionTitle
+              level="h1"
+              title={project.title}
+              subtitle={project.description}
+            />
 
-          <div className="project-page__content">
+            <ProjectGallery screenshots={project.screenshots} variant="featured" />
+          </div>
+
+          <div className="project-page__sections">
+            {project.overview && (
+              <Card>
+                <h2>Overview</h2>
+
+                <p>{project.overview}</p>
+              </Card>
+            )}
+
             <Card>
-              <h2>Technologies</h2>
+              <h2>Technology stack</h2>
 
               <div className="project-page__badges">
                 {project.technologies.map((technology) => (
                   <Badge key={technology}>{technology}</Badge>
                 ))}
               </div>
+            </Card>
+
+            {project.challenges.length > 0 && (
+              <Card>
+                <h2>Technical challenges</h2>
+
+                <ul>
+                  {project.challenges.map((challenge) => (
+                    <li key={challenge}>{challenge}</li>
+                  ))}
+                </ul>
+              </Card>
+            )}
+
+            {project.architecture && (
+              <Card>
+                <h2>Architecture</h2>
+
+                <p>{project.architecture}</p>
+              </Card>
+            )}
+
+            {project.lessonsLearned && (
+              <Card>
+                <h2>Lessons learned</h2>
+
+                <p>{project.lessonsLearned}</p>
+              </Card>
+            )}
+
+            <Card>
+              <h2>Resources</h2>
 
               <div className="project-page__actions">
                 {project.codeUrl && (
@@ -90,6 +135,12 @@ function ProjectPage() {
                   </Button>
                 )}
               </div>
+            </Card>
+
+            <Card>
+              <h2>Screenshots</h2>
+
+              <ProjectGallery screenshots={project.screenshots} variant="gallery" />
             </Card>
           </div>
 
