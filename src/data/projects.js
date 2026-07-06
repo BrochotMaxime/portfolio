@@ -78,15 +78,19 @@ export const projects = [
     description:
       "RESTful API developed during my developer training to manage a marina. The project includes user authentication, CRUD operations, reservations management and API documentation with Swagger.",
     screenshots: [
-      // {
-      //   src: "",
-      //   alt: "",
-      //   featured: true,
-      // },
-      // {
-      //   src: "",
-      //   alt: "",
-      // },
+      {
+        src: "/images/projects/port-de-plaisance-russel/home.webp",
+        alt: "Home page of the Port de Plaisance Russel API.",
+        featured: true,
+      },
+      {
+        src: "/images/projects/port-de-plaisance-russel/dashboard.webp",
+        alt: "Admin dashboard of the Port de Plaisance Russel API.",
+      },
+      {
+        src: "/images/projects/port-de-plaisance-russel/reservations.webp",
+        alt: "Reservations management page of the Port de Plaisance Russel API.",
+      }
     ],
     overview:
       "Port de Plaisance Russel is a RESTful API developed as part of my web developer training to manage the operations of a marina. The project provides user authentication, CRUD operations for catways, users and reservations, as well as interactive API documentation with Swagger. It was designed to strengthen my understanding of backend architecture, API design and data validation.",

@@ -6,6 +6,7 @@ import Button from "../components/ui/Button";
 import Card from "../components/ui/Card";
 import SectionTitle from "../components/ui/SectionTitle";
 import { projects } from "../data/projects";
+import ProjectGallery from "../components/projects/ProjectGallery";
 
 function ProjectPage() {
   const { slug } = useParams();
@@ -40,10 +41,6 @@ function ProjectPage() {
     );
   }
 
-  const featuredScreenshot = project.screenshots.find(
-    (screenshot) => screenshot.featured
-  );
-
   return (
     <>
       <Helmet>
@@ -63,13 +60,7 @@ function ProjectPage() {
               subtitle={project.description}
             />
 
-            {featuredScreenshot && (
-              <img
-                className="project-page__featured-image"
-                src={featuredScreenshot.src}
-                alt={featuredScreenshot.alt}
-              />
-            )}
+            <ProjectGallery screenshots={project.screenshots} variant="featured" />
           </div>
 
           <div className="project-page__sections">
@@ -146,22 +137,11 @@ function ProjectPage() {
               </div>
             </Card>
 
-            {project.screenshots.length > 0 && (
-              <Card>
-                <h2>Screenshots</h2>
+            <Card>
+              <h2>Screenshots</h2>
 
-                <div className="project-page__gallery">
-                  {project.screenshots.map((screenshot) => (
-                    <img
-                      className="project-page__gallery-image"
-                      key={screenshot.src}
-                      src={screenshot.src}
-                      alt={screenshot.alt}
-                    />
-                  ))}
-                </div>
-              </Card>
-            )}
+              <ProjectGallery screenshots={project.screenshots} variant="gallery" />
+            </Card>
           </div>
 
           <Link className="project-page__back-link" to="/projects">
