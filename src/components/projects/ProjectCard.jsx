@@ -22,6 +22,7 @@ function ProjectCard({ title, description, technologies, codeUrl, demoUrl, slug 
           {codeUrl && (
             <Button 
               href={codeUrl}
+              aria-label={`View source code for ${title}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -32,6 +33,7 @@ function ProjectCard({ title, description, technologies, codeUrl, demoUrl, slug 
           {demoUrl && (
             <Button 
               href={demoUrl} 
+              aria-label={`Open live demo for ${title}`}
               variant="secondary"
               target="_blank"
               rel="noopener noreferrer"
@@ -42,8 +44,12 @@ function ProjectCard({ title, description, technologies, codeUrl, demoUrl, slug 
         </div>
 
         {slug && (
-          <Link className="project-card__actions-link" to={`/projects/${slug}`}>
-            Read more
+          <Link 
+            className="project-card__actions-link" 
+            to={`/projects/${slug}`}
+            aria-label={`View project details for ${title}`}
+          >
+            View project
           </Link>
         )}        
       </div>

@@ -17,7 +17,7 @@ function AboutPreviewSection() {
               Curious, methodical and detail-oriented, I enjoy designing web applications that are clear, maintainable and built to last.
             </p>
 
-            <Button to="/about">Learn more</Button>
+            <Button to="/about">About me</Button>
           </Card>
         </div>
       </div>

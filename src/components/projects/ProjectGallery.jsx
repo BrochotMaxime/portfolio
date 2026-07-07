@@ -123,6 +123,7 @@ function ProjectGallery({ screenshots = [], variant = "gallery" }) {
                   className="project-gallery__image"
                   src={screenshot.src}
                   alt={screenshot.alt}
+                  loading="lazy"
                 />
               </button>
             );
