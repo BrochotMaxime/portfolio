@@ -28,11 +28,12 @@ function ContactPage() {
               <h2>Let's connect</h2>
 
               <p>
-                You can contact me through my professional profiles or explore my work on GitHub.
+                You can contact me through my professional profiles or explore
+                my work on GitHub.
               </p>
 
               <div className="contact-page__actions">
-                <Button 
+                <Button
                   href="https://github.com/BrochotMaxime"
                   target="_blank"
                   rel="noopener noreferrer"

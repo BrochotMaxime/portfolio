@@ -14,7 +14,8 @@ function AboutPreviewSection() {
         <div className="about-preview-section__content">
           <Card>
             <p>
-              Curious, methodical and detail-oriented, I enjoy designing web applications that are clear, maintainable and built to last.
+              Curious, methodical and detail-oriented, I enjoy designing web
+              applications that are clear, maintainable and built to last.
             </p>
 
             <Button to="/about">About me</Button>

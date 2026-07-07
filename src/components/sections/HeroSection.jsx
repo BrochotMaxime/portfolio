@@ -16,7 +16,9 @@ function HeroSection() {
           <div className="hero-section__actions">
             <Button to="/projects">View projects</Button>
 
-            <Button to="/contact" variant="secondary">Contact me</Button>
+            <Button to="/contact" variant="secondary">
+              Contact me
+            </Button>
           </div>
 
           <a
@@ -26,9 +28,7 @@ function HeroSection() {
           >
             <span className="hero-section__scroll-arrow">⌄</span>
 
-            <span className="hero-section__scroll-text">
-              Scroll
-            </span>
+            <span className="hero-section__scroll-text">Scroll</span>
           </a>
         </div>
       </div>

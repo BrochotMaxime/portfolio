@@ -19,13 +19,14 @@ The project is intended to evolve over time and remain understandable, maintaina
 The portfolio will be developed as a professional software project from its very first iteration.
 
 This decision implies that the project will follow professional development practices throughout its lifecycle, including:
-* a structured Git workflow
-* GitHub Issues and Milestones
-* Architecture Decision Records (ADR)
-* project documentation
-* maintainable architecture 
-* justified technical decisions
-* clean and readable code
+
+- a structured Git workflow
+- GitHub Issues and Milestones
+- Architecture Decision Records (ADR)
+- project documentation
+- maintainable architecture
+- justified technical decisions
+- clean and readable code
 
 The project is guided by the following principle:
 
@@ -35,17 +36,17 @@ The project is guided by the following principle:
 
 ### Positive
 
-* Better project consistency
-* Better maintainability
-* Better documentation
-* Clear architectural decisions
-* Easier future evolution
-* Professional Git history
-* Improved long-term understanding of the project
+- Better project consistency
+- Better maintainability
+- Better documentation
+- Clear architectural decisions
+- Easier future evolution
+- Professional Git history
+- Improved long-term understanding of the project
 
 ### Negative
 
-* More time spent on planning and documentation
-* Slower initial development
-* Additional documentation to maintain
-* Higher initial investment before visible features are delivered
+- More time spent on planning and documentation
+- Slower initial development
+- Additional documentation to maintain
+- Higher initial investment before visible features are delivered

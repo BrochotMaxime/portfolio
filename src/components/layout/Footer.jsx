@@ -5,35 +5,29 @@ function Footer() {
     <footer className="footer">
       <div className="footer__container">
         <Link className="footer__branding" to="/">
-          <span className="footer__name">
-            Maxime Brochot
-          </span>
+          <span className="footer__name">Maxime Brochot</span>
 
-          <span className="footer__role">
-            Web Developer
-          </span>
+          <span className="footer__role">Web Developer</span>
         </Link>
 
         <div className="footer__social">
-          <a 
+          <a
             href=""
             aria-label="GitHub"
             target="_blank"
             rel="noopener noreferrer"
-          >
-          </a>
+          ></a>
 
           <a
             href=""
             aria-label="LinkedIn"
             target="_blank"
             rel="noopener noreferrer"
-          >
-          </a>
+          ></a>
         </div>
 
         <p className="footer__copyright">
-            &copy; {new Date().getFullYear()} Maxime Brochot. All rights reserved.
+          &copy; {new Date().getFullYear()} Maxime Brochot. All rights reserved.
         </p>
 
         <nav className="footer__nav">
@@ -63,7 +57,7 @@ function Footer() {
           >
             Contact
           </NavLink>
-          
+
           <NavLink
             className={({ isActive }) =>
               isActive ? "footer__link footer__link--active" : "footer__link"

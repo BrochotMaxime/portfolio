@@ -76,9 +76,9 @@ They provide visual balance and maximise readability.
 
 Semantic colors are reserved for user feedback.
 
-* Success uses green to communicate positive actions and validation
-* Warning uses amber to draw attention without creating unnecessary urgency
-* Error uses red to indicate errors and destructive actions
+- Success uses green to communicate positive actions and validation
+- Warning uses amber to draw attention without creating unnecessary urgency
+- Error uses red to indicate errors and destructive actions
 
 > Colors should communicate purpose before aesthetics.
 
@@ -98,12 +98,12 @@ The interface should remain visually coherent across all pages.
 
 The general UI style follows these principles:
 
-* centered layouts with generous whitespace
-* slightly rounded corners
-* subtle shadows and borders
-* short and discreet animations
-* functional use of icons
-* consistent spacing and alignment
+- centered layouts with generous whitespace
+- slightly rounded corners
+- subtle shadows and borders
+- short and discreet animations
+- functional use of icons
+- consistent spacing and alignment
 
 Every component should contribute to a unified visual language throughout the application.
 
@@ -119,11 +119,11 @@ Its readability, neutrality and modern appearance align with the project's desig
 
 The typography should always remain:
 
-* highly readable
-* consistent across the application
-* modern without following short-lived trends
-* visually discreet
-* easy to scan on every device
+- highly readable
+- consistent across the application
+- modern without following short-lived trends
+- visually discreet
+- easy to scan on every device
 
 Visual hierarchy should rely primarily on font size, spacing and font weight rather than multiple font families.
 
@@ -133,11 +133,11 @@ Visual hierarchy should rely primarily on font size, spacing and font weight rat
 
 The interface should allow visitors to:
 
-* quickly understand the purpose of the portfolio
-* easily navigate between sections
-* focus on projects rather than decorative elements
-* discover information without unnecessary effort
-* enjoy a consistent experience across all pages
+- quickly understand the purpose of the portfolio
+- easily navigate between sections
+- focus on projects rather than decorative elements
+- discover information without unnecessary effort
+- enjoy a consistent experience across all pages
 
 ---
 
@@ -157,10 +157,10 @@ The visual identity is expected to evolve alongside the portfolio while preservi
 
 However, every design evolution must continue to respect the project's core principles:
 
-* Sobriety
-* Modernity
-* Minimalism
-* Structure
-* Readability
+- Sobriety
+- Modernity
+- Minimalism
+- Structure
+- Readability
 
 The objective is to refine the user experience without sacrificing consistency.

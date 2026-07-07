@@ -32,14 +32,17 @@ function LegalNoticePage() {
             <Card>
               <h2>Website purpose</h2>
               <p>
-                This website is a personal portfolio intended to present web development projects, skills and professional information.
+                This website is a personal portfolio intended to present web
+                development projects, skills and professional information.
               </p>
             </Card>
 
             <Card>
               <h2>Intellectual property</h2>
               <p>
-                Unless otherwise stated, all content on this website is owned by Maxime Brochot. Any reproduction or reuse without permission is prohibited.
+                Unless otherwise stated, all content on this website is owned by
+                Maxime Brochot. Any reproduction or reuse without permission is
+                prohibited.
               </p>
             </Card>
 

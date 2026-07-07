@@ -14,11 +14,11 @@ These conventions are intentionally simple and may evolve as the project grows.
 
 The project follows these general principles:
 
-* Each file should have a clear responsibility.
-* Each component should have a clear purpose.
-* Naming should make the role of a file, component or function immediately understandable.
-* Formatting is handled by Prettier.
-* Code quality is checked with ESLint.
+- Each file should have a clear responsibility.
+- Each component should have a clear purpose.
+- Naming should make the role of a file, component or function immediately understandable.
+- Formatting is handled by Prettier.
+- Code quality is checked with ESLint.
 
 ## File Naming
 
@@ -26,24 +26,24 @@ React component files should use `PascalCase`.
 
 Examples:
 
-* Header.jsx
-* ProjectCard.jsx
-* SectionTitle.jsx
+- Header.jsx
+- ProjectCard.jsx
+- SectionTitle.jsx
 
 Non-component JavaScript files should use `camelCase`.
 
 Examples:
 
-* projectData.js
-* navigationLinks.js
+- projectData.js
+- navigationLinks.js
 
 SCSS files should use `lowercase` names.
 
 Examples:
 
-* main.scss
-* _variables.scss
-* _reset.scss
+- main.scss
+- \_variables.scss
+- \_reset.scss
 
 ## React Components
 
@@ -53,7 +53,7 @@ Examples:
 
 ```javascript
 function ProjectCard() {
-        return <article>...</article>;
+  return <article>...</article>;
 }
 ```
 

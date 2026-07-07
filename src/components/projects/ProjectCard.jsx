@@ -4,7 +4,14 @@ import Badge from "../ui/Badge";
 import Button from "../ui/Button";
 import Card from "../ui/Card";
 
-function ProjectCard({ title, description, technologies, codeUrl, demoUrl, slug }) {
+function ProjectCard({
+  title,
+  description,
+  technologies,
+  codeUrl,
+  demoUrl,
+  slug,
+}) {
   return (
     <Card>
       <h2>{title}</h2>
@@ -20,7 +27,7 @@ function ProjectCard({ title, description, technologies, codeUrl, demoUrl, slug 
       <div className="project-card__actions">
         <div className="project-card__actions-buttons">
           {codeUrl && (
-            <Button 
+            <Button
               href={codeUrl}
               aria-label={`View source code for ${title}`}
               target="_blank"
@@ -31,8 +38,8 @@ function ProjectCard({ title, description, technologies, codeUrl, demoUrl, slug 
           )}
 
           {demoUrl && (
-            <Button 
-              href={demoUrl} 
+            <Button
+              href={demoUrl}
               aria-label={`Open live demo for ${title}`}
               variant="secondary"
               target="_blank"
@@ -44,14 +51,14 @@ function ProjectCard({ title, description, technologies, codeUrl, demoUrl, slug 
         </div>
 
         {slug && (
-          <Link 
-            className="project-card__actions-link" 
+          <Link
+            className="project-card__actions-link"
             to={`/projects/${slug}`}
             aria-label={`View project details for ${title}`}
           >
             View project
           </Link>
-        )}        
+        )}
       </div>
     </Card>
   );

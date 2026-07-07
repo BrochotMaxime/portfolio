@@ -16,14 +16,21 @@ export const projects = [
       //   alt: "",
       // },
     ],
-    overview: 
+    overview:
       "This portfolio is a personal project designed to present my work, technical skills and development approach through a modern and maintainable web application. Built with React, React Router and SCSS, it was also an opportunity to design a reusable component library, improve accessibility, optimise SEO and create a scalable architecture for future projects.",
-    technologies: ["React", "React Router", "SCSS", "Vite", "ESLint", "Prettier"],
+    technologies: [
+      "React",
+      "React Router",
+      "SCSS",
+      "Vite",
+      "ESLint",
+      "Prettier",
+    ],
     challenges: [
       "Designing a reusable component library to ensure consistency across the application.",
       "Creating a scalable project architecture while keeping the codebase easy to maintain.",
       "Improving accessibility, SEO and responsive behaviour throughout the portfolio.",
-      "Building a portfolio that can evolve naturally as new projects are added."
+      "Building a portfolio that can evolve naturally as new projects are added.",
     ],
     architecture:
       "The application follows a component-based architecture built with React and React Router. Reusable UI components such as Button, Card, Badge and SectionTitle are shared across the application to ensure visual consistency and simplify maintenance. Project data is centralised in dedicated data files, allowing pages to remain focused on presentation while making the portfolio easy to extend with future projects.",
@@ -53,10 +60,10 @@ export const projects = [
         src: "/images/projects/trouve-ton-artisan/artisan-detail.webp",
         alt: "Artisan detail page showing contact and professional information.",
       },
-    ],    
+    ],
     overview:
       "Trouve ton artisan is a full-stack web application developed as part of my web developer training. The application helps users find local artisans by category or name through a simple and accessible interface. The project combines a React frontend, a RESTful API built with Express and a MySQL database managed with Sequelize. It was designed to apply full-stack development principles while focusing on clean architecture, maintainability and user experience.",
-    technologies: ["React", "Node.js", "Express", "MySQL", "Sequelize", "SCSS"],  
+    technologies: ["React", "Node.js", "Express", "MySQL", "Sequelize", "SCSS"],
     challenges: [
       "Designing a clear separation between the React frontend and the REST API.",
       "Building a relational database with Sequelize and maintaining data integrity.",
@@ -67,7 +74,8 @@ export const projects = [
       "The application follows a classic full-stack architecture with a React frontend consuming a REST API developed with Express. Business logic is separated into controllers and models, while Sequelize manages database interactions with MySQL. This separation allows each layer of the application to evolve independently while keeping the project maintainable and scalable.",
     lessonsLearned:
       "This project strengthened my understanding of full-stack development and highlighted the importance of planning an application's architecture before implementing features. It also reinforced my appreciation for clean code, reusable components and incremental development, principles that I continue to apply in every new project.",
-    codeUrl: "https://github.com/BrochotMaxime/brochot-maxime-devoir-site-trouve-ton-artisan",
+    codeUrl:
+      "https://github.com/BrochotMaxime/brochot-maxime-devoir-site-trouve-ton-artisan",
     demoUrl: "https://brochot-maxime-devoir-site-trouve-ton-tmpa.onrender.com/",
     featured: true,
   },
@@ -90,11 +98,18 @@ export const projects = [
       {
         src: "/images/projects/port-de-plaisance-russel/reservations.webp",
         alt: "Reservations management page of the Port de Plaisance Russel API.",
-      }
+      },
     ],
     overview:
       "Port de Plaisance Russel is a RESTful API developed as part of my web developer training to manage the operations of a marina. The project provides user authentication, CRUD operations for catways, users and reservations, as well as interactive API documentation with Swagger. It was designed to strengthen my understanding of backend architecture, API design and data validation.",
-    technologies: ["Node.js", "Express", "MongoDB", "Mongoose", "Swagger", "EJS"],
+    technologies: [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Swagger",
+      "EJS",
+    ],
     challenges: [
       "Designing a RESTful API with clear and consistent endpoints.",
       "Managing user authentication and session handling securely.",
@@ -105,7 +120,8 @@ export const projects = [
       "The backend follows an MVC architecture built with Express and MongoDB. Controllers handle business logic, Mongoose models manage data access and EJS templates provide a lightweight administration interface. Authentication relies on server-side sessions, while Swagger documents every endpoint, making the API easy to understand, test and maintain.",
     lessonsLearned:
       "This project helped me better understand how to design and structure a backend application independently from its client. It reinforced the importance of validation, error handling and clear API documentation. It also gave me practical experience with session-based authentication, MongoDB modelling and maintaining a clean separation between business logic and presentation.",
-    codeUrl: "https://github.com/BrochotMaxime/brochot-maxime-devoir-api-port-russel",
+    codeUrl:
+      "https://github.com/BrochotMaxime/brochot-maxime-devoir-api-port-russel",
     demoUrl: "https://brochot-maxime-devoir-api-port-russel.onrender.com/",
     featured: false,
   },
@@ -125,7 +141,7 @@ export const projects = [
       //   src: "",
       //   alt: "",
       // },
-    ],    
+    ],
     overview:
       "Tifosi is a relational database project developed during my web developer training to design and implement the data model of a restaurant management system. The project focuses on database modelling, SQL scripting and data integrity using MySQL. It was an opportunity to apply relational database concepts while designing a clear, consistent and maintainable schema.",
     technologies: ["MySQL", "SQL", "MySQL Workbench"],
@@ -139,8 +155,9 @@ export const projects = [
       "The database follows a normalized relational model built with MySQL. Tables are connected through primary and foreign keys, while constraints ensure data consistency and integrity across the application. The project includes SQL scripts for database creation, data insertion and advanced queries, making the solution easy to reproduce and maintain.",
     lessonsLearned:
       "This project strengthened my understanding of relational database design and highlighted the importance of modelling data before writing queries or implementing application logic. It also reinforced the value of data integrity, normalization and clear relationships as essential foundations for building reliable applications.",
-    codeUrl: "https://github.com/BrochotMaxime/brochot-maxime-devoir-base-de-donnees-tifosi",
+    codeUrl:
+      "https://github.com/BrochotMaxime/brochot-maxime-devoir-base-de-donnees-tifosi",
     demoUrl: "",
     featured: false,
-  }
+  },
 ];

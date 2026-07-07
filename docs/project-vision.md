@@ -26,11 +26,11 @@ Each decision must answer a clear question:
 
 The repository should show a professional development approach through:
 
-* clear architecture
-* reusable components
-* consistent naming
-* readable documentation
-* maintainable code
+- clear architecture
+- reusable components
+- consistent naming
+- readable documentation
+- maintainable code
 
 ### 3. The portfolio should evolve over time
 
@@ -38,10 +38,10 @@ The portfolio is not designed as a one-time project.
 
 It should be easy to update with:
 
-* new projects
-* new skills
-* professional experience
-* improved design and features
+- new projects
+- new skills
+- professional experience
+- improved design and features
 
 ### 4. Quality over quantity
 

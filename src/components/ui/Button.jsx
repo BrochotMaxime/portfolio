@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Button({ children, to, href, variant = "primary", type="button" }) {
+function Button({ children, to, href, variant = "primary", type = "button" }) {
   const className = `button button--${variant}`;
 
   if (to) {
@@ -13,7 +13,12 @@ function Button({ children, to, href, variant = "primary", type="button" }) {
 
   if (href) {
     return (
-      <a className={className} href={href} target="_blank" rel="noopener noreferrer">
+      <a
+        className={className}
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {children}
       </a>
     );

@@ -59,10 +59,10 @@ Contains all project documentation.
 
 This includes:
 
-* project vision
-* roadmap
-* architecture documentation
-* Architecture Decision Records (ADR)
+- project vision
+- roadmap
+- architecture documentation
+- Architecture Decision Records (ADR)
 
 #### public/
 
@@ -112,32 +112,35 @@ This folder is divided into three categories:
 Global layout components shared across the entire application.
 
 Examples:
-* Header
-* Footer
-* Layout
-* Navigation
+
+- Header
+- Footer
+- Layout
+- Navigation
 
 #### sections/
 
 Large page sections.
 
 Examples:
-* Hero
-* About
-* Skills
-* Featured Projects
-* Contact CTA
+
+- Hero
+- About
+- Skills
+- Featured Projects
+- Contact CTA
 
 #### ui/
 
 Small reusable interface components.
 
 Examples:
-* Button
-* Card
-* Badge
-* Tag
-* SectionTitle
+
+- Button
+- Card
+- Badge
+- Tag
+- SectionTitle
 
 These components should remain generic and reusable.
 
@@ -146,10 +149,11 @@ These components should remain generic and reusable.
 Contains static portfolio data.
 
 Examples:
-* projects
-* skills
-* navigation
-* social links
+
+- projects
+- skills
+- navigation
+- social links
 
 Keeping data separate from components improves readability and maintainability.
 
@@ -158,10 +162,11 @@ Keeping data separate from components improves readability and maintainability.
 Contains page-level React components managed by React Router.
 
 Examples:
-* HomePage
-* ProjectsPage
-* ProjectPage
-* ContactPage
+
+- HomePage
+- ProjectsPage
+- ProjectPage
+- ContactPage
 
 ### styles/
 
@@ -174,18 +179,20 @@ This folder is divided into three categories:
 Reusable styling utilities.
 
 Examples:
-* variables
-* mixins
-* functions
+
+- variables
+- mixins
+- functions
 
 #### base/
 
 Global styles applied to the entire application.
 
 Examples:
-* reset
-* typography
-* global styles
+
+- reset
+- typography
+- global styles
 
 #### main.scss
 
@@ -237,9 +244,9 @@ This architecture is expected to evolve alongside the project.
 
 However, every structural change should respect the project's guiding principles:
 
-* Every decision must be justified.
-* The code should reflect a professional way of working.
-* The portfolio should evolve over time.
-* Quality over quantity.
+- Every decision must be justified.
+- The code should reflect a professional way of working.
+- The portfolio should evolve over time.
+- Quality over quantity.
 
 The goal is not to create the most complex architecture, but the simplest architecture capable of supporting the project's future evolution.

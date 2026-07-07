@@ -45,12 +45,9 @@ function ProjectPage() {
     <>
       <Helmet>
         <title>{project.title} | Maxime Brochot</title>
-        <meta
-          name="description"
-          content={project.description}
-        />
+        <meta name="description" content={project.description} />
       </Helmet>
-      
+
       <section className="project-page">
         <div className="container">
           <div className="project-page__hero">
@@ -60,7 +57,10 @@ function ProjectPage() {
               subtitle={project.description}
             />
 
-            <ProjectGallery screenshots={project.screenshots} variant="featured" />
+            <ProjectGallery
+              screenshots={project.screenshots}
+              variant="featured"
+            />
           </div>
 
           <div className="project-page__sections">
@@ -115,7 +115,7 @@ function ProjectPage() {
 
               <div className="project-page__actions">
                 {project.codeUrl && (
-                  <Button 
+                  <Button
                     href={project.codeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -125,7 +125,7 @@ function ProjectPage() {
                 )}
 
                 {project.demoUrl && (
-                  <Button 
+                  <Button
                     href={project.demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -140,7 +140,10 @@ function ProjectPage() {
             <Card>
               <h2>Screenshots</h2>
 
-              <ProjectGallery screenshots={project.screenshots} variant="gallery" />
+              <ProjectGallery
+                screenshots={project.screenshots}
+                variant="gallery"
+              />
             </Card>
           </div>
 
