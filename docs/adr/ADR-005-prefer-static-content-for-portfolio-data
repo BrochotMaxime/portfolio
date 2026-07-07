@@ -1,0 +1,38 @@
+# ADR-005 - Prefer Static Content for Portfolio Data
+
+## Status
+
+Accepted
+
+## Context
+
+The portfolio presents a limited amount of content that changes infrequently.
+
+Introducing a database or a headless CMS would increase the project's complexity by adding deployment, authentication and content management requirements that are not justified by the project's needs.
+
+A lightweight solution was required while keeping the portfolio easy to extend with new projects.
+
+## Decision
+
+Portfolio content is managed through static JavaScript data files.
+
+Project information is centralised in dedicated data modules that are imported by the React components responsible for rendering the content.
+
+This approach keeps the application simple while allowing new projects to be added by updating a single source of truth.
+
+## Consequences
+
+### Positive
+
+* Keeps the application simple
+* Eliminates the need for a backend or CMS
+* Simplifies deployment
+* Reduces maintenance requirements
+* Makes adding new projects straightforward
+* Keeps content versioned alongside the source code
+
+### Negative
+
+* Updating content requires modifying the source code
+* Non-technical users cannot edit the portfolio independently
+* A different solution may become necessary if the amount of content grows significantly

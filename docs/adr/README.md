@@ -70,9 +70,14 @@ The following principles apply to every ADR:
 
 ## ADR Index
 
-| ADR     | Title                          | Status   |
-|:--------|:-------------------------------|:---------|
-| ADR-000 | Project Development Philosophy | Accepted |
+| ADR     | Title                                         | Status   |
+|:--------|:----------------------------------------------|:---------|
+| ADR-000 | Professional Development Workflow             | Accepted |
+| ADR-001 | Adopt React Component-Based Architecture      | Accepted |
+| ADR-002 | Build a Reusable UI Component Library         | Accepted |
+| ADR-003 | Centralize Project Data                       | Accepted |
+| ADR-004 | Use Structured SCSS Architecture              | Accepted |
+| ADR-005 | Prefer Static Content for Portfolio Data      | Accepted |
 
 ---
 
