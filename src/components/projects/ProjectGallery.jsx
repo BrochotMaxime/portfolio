@@ -5,7 +5,7 @@ function ProjectGallery({ screenshots = [], variant = "gallery" }) {
   const [selectedIndex, setSelectedIndex] = useState(null);
 
   const featuredScreenshotIndex = screenshots.findIndex(
-    (screenshot) => screenshot.featured
+    (screenshot) => screenshot.featured,
   );
 
   const featuredScreenshot =
@@ -14,7 +14,7 @@ function ProjectGallery({ screenshots = [], variant = "gallery" }) {
       : screenshots[0];
 
   const galleryScreenshots = screenshots.filter(
-    (screenshot) => !screenshot.featured
+    (screenshot) => !screenshot.featured,
   );
 
   const selectedImage =
@@ -30,13 +30,13 @@ function ProjectGallery({ screenshots = [], variant = "gallery" }) {
 
   const goToPreviousImage = useCallback(() => {
     setSelectedIndex((currentIndex) =>
-      currentIndex === 0 ? screenshots.length - 1 : currentIndex - 1
+      currentIndex === 0 ? screenshots.length - 1 : currentIndex - 1,
     );
   }, [screenshots.length]);
 
   const goToNextImage = useCallback(() => {
     setSelectedIndex((currentIndex) =>
-      currentIndex === screenshots.length - 1 ? 0 : currentIndex + 1
+      currentIndex === screenshots.length - 1 ? 0 : currentIndex + 1,
     );
   }, [screenshots.length]);
 
@@ -97,7 +97,7 @@ function ProjectGallery({ screenshots = [], variant = "gallery" }) {
               onPrevious={goToPreviousImage}
               onNext={goToNextImage}
             />,
-            document.body
+            document.body,
           )}
       </>
     );
@@ -109,7 +109,7 @@ function ProjectGallery({ screenshots = [], variant = "gallery" }) {
         <div className="project-gallery">
           {galleryScreenshots.map((screenshot) => {
             const screenshotIndex = screenshots.findIndex(
-              (image) => image.src === screenshot.src
+              (image) => image.src === screenshot.src,
             );
 
             return (
@@ -141,7 +141,7 @@ function ProjectGallery({ screenshots = [], variant = "gallery" }) {
             onPrevious={goToPreviousImage}
             onNext={goToNextImage}
           />,
-          document.body
+          document.body,
         )}
     </>
   );

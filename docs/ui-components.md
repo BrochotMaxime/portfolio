@@ -32,9 +32,9 @@ Represents an action or a navigation element.
 
 Provides a consistent interface for:
 
-* internal navigation
-* external links
-* standard button actions
+- internal navigation
+- external links
+- standard button actions
 
 Button variants should only define visual appearance while preserving the same behaviour.
 
@@ -70,10 +70,10 @@ Highlights technologies, categories, skills or other concise labels while mainta
 
 All UI components should follow the project's core principles:
 
-* simplicity
-* consistency
-* readability
-* reusability
-* semantic HTML
+- simplicity
+- consistency
+- readability
+- reusability
+- semantic HTML
 
 Components should remain focused on a single responsibility and evolve only when justified by real project needs.

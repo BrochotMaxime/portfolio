@@ -13,35 +13,35 @@ Build a professional portfolio that demonstrates technical skills, architectural
 
 ### Main objectives
 
-* Project foundation
-* Documentation
-* Design system
-* Responsive layout
-* Portfolio pages
-* Project showcase
-* Contact page
-* Accessibility
-* Performance optimization
-* Production deployment
+- Project foundation
+- Documentation
+- Design system
+- Responsive layout
+- Portfolio pages
+- Project showcase
+- Contact page
+- Accessibility
+- Performance optimization
+- Production deployment
 
 ## Future versions
 
 ### Version 1.1
 
-* UI/UX improvements
-* Additional project details
-* Performance refinements
+- UI/UX improvements
+- Additional project details
+- Performance refinements
 
 ### Version 1.2
 
-* New personal projects
-* Documentation improvements
+- New personal projects
+- Documentation improvements
 
 ### Version 2.0
 
-* Professional experience integration
-* New technologies and skills
-* Portfolio evolution based on career progression
+- Professional experience integration
+- New technologies and skills
+- Portfolio evolution based on career progression
 
 ## Roadmap philosophy
 

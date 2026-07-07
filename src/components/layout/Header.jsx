@@ -38,13 +38,11 @@ function Header() {
         </nav>
 
         <div className="header__mobile">
-          <button 
+          <button
             className="header__mobile-button"
             type="button"
             aria-label="Toggle navigation menu"
-          >
-            
-          </button>
+          ></button>
         </div>
       </div>
     </header>

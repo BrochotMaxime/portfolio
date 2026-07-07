@@ -26,15 +26,15 @@ The component library is designed to evolve progressively as new interface patte
 
 ### Positive
 
-* Promotes code reuse across the application
-* Ensures visual consistency between pages
-* Simplifies maintenance by centralising UI changes
-* Improves readability through clear component responsibilities
-* Makes future features easier to implement
-* Encourages a scalable design system
+- Promotes code reuse across the application
+- Ensures visual consistency between pages
+- Simplifies maintenance by centralising UI changes
+- Improves readability through clear component responsibilities
+- Makes future features easier to implement
+- Encourages a scalable design system
 
 ### Negative
 
-* Requires additional planning before implementing new interface elements
-* Introduces an initial abstraction layer compared to page-specific markup
-* Components may require periodic refactoring as the design system evolves
+- Requires additional planning before implementing new interface elements
+- Introduces an initial abstraction layer compared to page-specific markup
+- Components may require periodic refactoring as the design system evolves

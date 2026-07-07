@@ -26,22 +26,22 @@ The portfolio is available online:
 
 ## Features
 
-* Responsive design
-* Detailed project case studies
-* Interactive image gallery with lightbox
-* Reusable UI component library
-* Centralized project data
-* SEO optimization
-* Accessibility-focused interface
-* Technical documentation
-* Architecture Decision Records (ADR)
+- Responsive design
+- Detailed project case studies
+- Interactive image gallery with lightbox
+- Reusable UI component library
+- Centralized project data
+- SEO optimization
+- Accessibility-focused interface
+- Technical documentation
+- Architecture Decision Records (ADR)
 
 ---
 
 ## Tech Stack
 
 | Category      | Technologies        |
-|---------------|---------------------|
+| ------------- | ------------------- |
 | Frontend      | React, React Router |
 | Styling       | SCSS                |
 | Build Tool    | Vite                |
@@ -82,13 +82,13 @@ docs/
 
 The project includes dedicated technical documentation covering both development practices and architectural decisions.
 
-* Architecture
-* UI Components
-* Coding Conventions
-* Project Vision
-* Design Vision
-* Roadmap
-* Architecture Decision Records (ADR)
+- Architecture
+- UI Components
+- Coding Conventions
+- Project Vision
+- Design Vision
+- Roadmap
+- Architecture Decision Records (ADR)
 
 ---
 
@@ -132,11 +132,11 @@ npm run preview
 The portfolio has been optimized for production and achieves the following Lighthouse scores:
 
 | Category       | Score |
-|----------------|------:|
-| Performance    | 92    |
-| Accessibility  | 100   |
-| Best Practices | 100   |
-| SEO            | 100   |
+| -------------- | ----: |
+| Performance    |    92 |
+| Accessibility  |   100 |
+| Best Practices |   100 |
+| SEO            |   100 |
 
 ---
 
@@ -146,11 +146,11 @@ The portfolio will continue to evolve over time.
 
 Planned improvements include:
 
-* Additional projects
-* Continuous UI improvements
-* Expanded documentation
-* New technical experiments
-* Ongoing performance optimization
+- Additional projects
+- Continuous UI improvements
+- Expanded documentation
+- New technical experiments
+- Ongoing performance optimization
 
 ---
 

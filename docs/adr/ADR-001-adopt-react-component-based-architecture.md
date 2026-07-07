@@ -26,15 +26,15 @@ The project structure separates pages, layouts, reusable components and project 
 
 ### Positive
 
-* Encourages component reuse across the application
-* Reduces duplicated code
-* Improves long-term maintainability
-* Simplifies future feature additions
-* Provides a consistent user experience
-* Keeps responsibilities clearly separated
+- Encourages component reuse across the application
+- Reduces duplicated code
+- Improves long-term maintainability
+- Simplifies future feature additions
+- Provides a consistent user experience
+- Keeps responsibilities clearly separated
 
 ### Negative
 
-* Higher initial project setup
-* Requires understanding React concepts and component composition
-* Adds some abstraction compared to a simple static website
+- Higher initial project setup
+- Requires understanding React concepts and component composition
+- Adds some abstraction compared to a simple static website

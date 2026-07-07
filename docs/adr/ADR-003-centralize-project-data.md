@@ -26,14 +26,14 @@ React components consume this data without embedding project-specific content di
 
 ### Positive
 
-* Provides a single source of truth for project information
-* Simplifies the addition of new projects
-* Prevents duplicated content across components
-* Keeps presentation and content clearly separated
-* Improves maintainability as the portfolio grows
+- Provides a single source of truth for project information
+- Simplifies the addition of new projects
+- Prevents duplicated content across components
+- Keeps presentation and content clearly separated
+- Improves maintainability as the portfolio grows
 
 ### Negative
 
-* The data structure must evolve carefully as new project features are introduced
-* Components become dependent on a consistent data model
-* Significant changes to the data structure may require updates across multiple components
+- The data structure must evolve carefully as new project features are introduced
+- Components become dependent on a consistent data model
+- Significant changes to the data structure may require updates across multiple components

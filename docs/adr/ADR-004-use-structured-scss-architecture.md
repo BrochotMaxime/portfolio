@@ -24,15 +24,15 @@ Each React component is associated with its own stylesheet whenever appropriate,
 
 ### Positive
 
-* Improves readability of the stylesheet structure
-* Reduces duplicated CSS rules
-* Simplifies maintenance as the project grows
-* Encourages separation of concerns
-* Makes new pages and components easier to integrate
-* Promotes a consistent design system
+- Improves readability of the stylesheet structure
+- Reduces duplicated CSS rules
+- Simplifies maintenance as the project grows
+- Encourages separation of concerns
+- Makes new pages and components easier to integrate
+- Promotes a consistent design system
 
 ### Negative
 
-* Requires developers to understand the project structure before adding new styles
-* Introduces a larger number of SCSS files compared to a single stylesheet
-* Some style changes may require modifications in multiple files
+- Requires developers to understand the project structure before adding new styles
+- Introduces a larger number of SCSS files compared to a single stylesheet
+- Some style changes may require modifications in multiple files
