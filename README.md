@@ -1,110 +1,161 @@
 # Portfolio
 
+> A professional developer portfolio built to demonstrate not only completed projects, but also software architecture, maintainability and modern development practices.
+
+![Portfolio Preview](./public/images/README/hero.webp)
+
+---
+
 ## Overview
 
 This repository contains the source code of my personal developer portfolio.
 
-The project is designed not only to showcase completed work, but also to demonstrate a professional software development workflow, architectural thinking and a structured approach to building web applications.
+Beyond showcasing completed projects, this portfolio has been designed as a real software project following professional development practices. It focuses on clean architecture, reusable components, accessibility, SEO and long-term maintainability.
 
-The portfolio will evolve throughout my career as I develop new skills, complete new projects and refine my development practices.
-
----
-
-## Project Objectives
-
-The main objectives of this project are to:
-
-* present selected development projects
-* demonstrate technical skills through real-world applications
-* showcase a professional software development workflow
-* document important architectural and technical decisions
-* build a maintainable and scalable application
+The project is continuously improved as new projects, features and architectural decisions are added.
 
 ---
 
-## Technology Stack
+## Live Demo
 
-Current technologies include:
+The portfolio is available online:
 
-* React
-* Vite
-* React Router *(planned)*
-* SCSS *(planned)*
-* ESLint
-* Prettier
-* EditorConfig
-
-The technology stack will evolve as the project progresses.
+**https://your-domain.com**
 
 ---
 
-## Getting Started
+## Features
 
-### Installation
+* Responsive design
+* Detailed project case studies
+* Interactive image gallery with lightbox
+* Reusable UI component library
+* Centralized project data
+* SEO optimization
+* Accessibility-focused interface
+* Technical documentation
+* Architecture Decision Records (ADR)
 
-Clone the repository and install the dependencies.
+---
 
-```bash
-git clone https://github.com/BrochotMaxime/portfolio.git
-cd portfolio
-npm install
+## Tech Stack
+
+| Category      | Technologies        |
+|---------------|---------------------|
+| Frontend      | React, React Router |
+| Styling       | SCSS                |
+| Build Tool    | Vite                |
+| Code Quality  | ESLint, Prettier    |
+| Documentation | Markdown, ADR       |
+
+---
+
+## Architecture
+
+The portfolio follows a modular and component-based architecture.
+
+Responsibilities are clearly separated between presentation, reusable UI components, project data and styling, making the application easier to maintain and extend over time.
+
+```text
+src/
+├── assets/
+├── components/
+├── data/
+├── pages/
+├── scss/
+├── App.jsx
+└── main.jsx
+
+docs/
+├── adr/
+├── architecture.md
+├── coding-conventions.md
+├── design-vision.md
+├── project-vision.md
+├── roadmap.md
+└── ui-components.md
 ```
-
-### Development Server
-
-Start the local development server.
-
-```bash
-npm run dev
-```
-
----
-
-## Project Philosophy
-
-This project is guided by a simple principle:
-
-> Make the portfolio show not only what has been developed, but also how its author thinks as a developer.
-
-Every technical decision aims to improve the project's quality, maintainability and long-term evolution.
 
 ---
 
 ## Documentation
 
-Additional documentation is available in the `docs/` directory.
+The project includes dedicated technical documentation covering both development practices and architectural decisions.
 
-* `project-vision.md` : project goals and long-term vision
-* `roadmap.md` : development roadmap
-* `architecture.md` : project architecture
-* `coding-conventions.md` : coding standards and conventions
-* `adr/` : Architecture Decision Records
+* Architecture
+* UI Components
+* Coding Conventions
+* Project Vision
+* Design Vision
+* Roadmap
+* Architecture Decision Records (ADR)
 
 ---
 
-## Repository Structure
+## Getting Started
 
-```text
-portfolio/
-├── docs/
-├── public/
-├── src/
-├── .editorconfig
-├── .gitignore
-├── .prettierrc
-├── package.json
-├── README.md
-└── vite.config.js
+### Clone the repository
+
+```bash
+git clone https://github.com/BrochotMaxime/portfolio.git
+cd portfolio
 ```
 
-For a detailed explanation of the project architecture, see `docs/architecture.md`.
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start the development server
+
+```bash
+npm run dev
+```
+
+### Create a production build
+
+```bash
+npm run build
+```
+
+### Preview the production build
+
+```bash
+npm run preview
+```
 
 ---
 
-## Project Status
+## Lighthouse
 
-The project is currently under active development.
+The portfolio has been optimized for production and achieves the following Lighthouse scores:
 
-The development workflow and documentation have been established.
+| Category       | Score |
+|----------------|------:|
+| Performance    | 92    |
+| Accessibility  | 100   |
+| Best Practices | 100   |
+| SEO            | 100   |
 
-The implementation of the portfolio interface will begin during the next milestone.
+---
+
+## Roadmap
+
+The portfolio will continue to evolve over time.
+
+Planned improvements include:
+
+* Additional projects
+* Continuous UI improvements
+* Expanded documentation
+* New technical experiments
+* Ongoing performance optimization
+
+---
+
+## License
+
+The source code of this project is licensed under the MIT License.
+
+Project content, texts, images and other original assets remain © Maxime Brochot. All rights reserved.
