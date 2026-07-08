@@ -1,0 +1,103 @@
+.resume-print {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  padding: 13mm 15mm;
+  background: #ffffff;
+  color: #111111;
+  font-size: 10.5px;
+  line-height: 1.32;
+}
+
+.resume-print__header {
+  text-align: center;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #111111;
+}
+
+.resume-print__header h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.resume-print__header p {
+  margin: 0.25rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.resume-print__header address {
+  margin-top: 0.35rem;
+  font-style: normal;
+  font-size: 0.78rem;
+}
+
+.resume-print a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.resume-print section {
+  margin-top: 0.7rem;
+}
+
+.resume-print h2 {
+  margin: 0 0 0.3rem;
+  padding-bottom: 0.12rem;
+  border-bottom: 1px solid #cccccc;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.resume-print h3 {
+  margin: 0;
+  font-size: 0.82rem;
+}
+
+.resume-print p {
+  margin: 0.15rem 0 0;
+}
+
+.resume-print article {
+  margin-top: 0.45rem;
+}
+
+.resume-print__meta {
+  color: #444444;
+  font-weight: 600;
+}
+
+.resume-print ul {
+  margin: 0.2rem 0 0;
+  padding-left: 1rem;
+}
+
+.resume-print li + li {
+  margin-top: 0.08rem;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  body {
+    background: #ffffff;
+  }
+
+  .header,
+  .footer {
+    display: none;
+  }
+
+  .resume-print {
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 12mm 14mm;
+  }
+}
