@@ -62,6 +62,15 @@ function Footer() {
             className={({ isActive }) =>
               isActive ? "footer__link footer__link--active" : "footer__link"
             }
+            to="/resume"
+          >
+            Resume
+          </NavLink>
+
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "footer__link footer__link--active" : "footer__link"
+            }
             to="/legal-notice"
           >
             Legal Notice

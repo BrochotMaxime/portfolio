@@ -28,13 +28,12 @@ function ContactPage() {
               <h2>Let's connect</h2>
 
               <p>
-                You can contact me by email, connect with me on LinkedIn or explore my work on GitHub.
+                You can contact me by email, connect with me on LinkedIn or
+                explore my work on GitHub.
               </p>
 
               <div className="contact-page__actions">
-              <Button href="mailto:brochot.max@gmail.com">
-                Email me
-              </Button>
+                <Button href="mailto:brochot.max@gmail.com">Email me</Button>
 
                 <Button
                   href="https://github.com/BrochotMaxime"
@@ -55,12 +54,12 @@ function ContactPage() {
                 </Button>
 
                 <Button
-                  href="/documents/maxime-brochot-cv.pdf"
+                  href="/documents/maxime-brochot-resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   variant="secondary"
                 >
-                  Download CV
+                  Download Resume (PDF)
                 </Button>
               </div>
             </Card>

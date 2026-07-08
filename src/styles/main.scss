@@ -16,6 +16,10 @@
 @use "components/card";
 @use "components/section-title";
 
+@use "components/projects/project-card";
+@use "components/projects/project-gallery";
+@use "components/resume/resume-header";
+
 @use "sections/hero-section";
 @use "sections/featured-projects-section";
 @use "sections/about-preview-section";
@@ -25,7 +29,6 @@
 @use "pages/project-page";
 @use "pages/about-page";
 @use "pages/contact-page";
+@use "pages/resume-page";
+@use "pages/resume-print-page";
 @use "pages/legal-notice-page";
-
-@use "projects/project-card";
-@use "projects/project-gallery";
