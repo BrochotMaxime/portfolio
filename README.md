@@ -20,7 +20,7 @@ The project is continuously improved as new projects, features and architectural
 
 The portfolio is available online:
 
-**https://your-domain.com**
+**https://maxime-brochot.dev**
 
 ---
 
