@@ -164,6 +164,11 @@ function ResumePrintPage() {
           <h2>Languages</h2>
           <p>French — Native · English — Professional working proficiency</p>
         </section>
+
+        <section>
+          <h2>Interests</h2>
+          <p>Trail running · Scale model painting · Video games</p>
+        </section>
       </main>
     </>
   );

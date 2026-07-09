@@ -39,6 +39,12 @@
   color: $color-primary;
 }
 
+.resume-header__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
 .resume-header__actions {
   display: flex;
 }

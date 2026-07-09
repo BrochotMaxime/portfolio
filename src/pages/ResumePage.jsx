@@ -314,7 +314,7 @@ function ResumePage() {
               <h2>Interests</h2>
 
               <div className="resume-page__badges">
-                <Badge>Running</Badge>
+                <Badge>Trail running</Badge>
                 <Badge>Scale model painting</Badge>
                 <Badge>Video games</Badge>
               </div>

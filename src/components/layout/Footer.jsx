@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -12,18 +13,24 @@ function Footer() {
 
         <div className="footer__social">
           <a
-            href=""
+            className="icon-label"
+            href="https://github.com/BrochotMaxime"
             aria-label="GitHub"
             target="_blank"
             rel="noopener noreferrer"
-          ></a>
+          >
+            <FaGithub size={18} />
+          </a>
 
           <a
-            href=""
+            className="icon-label"
+            href="https://www.linkedin.com/in/maxime-brochot-646989171"
             aria-label="LinkedIn"
             target="_blank"
             rel="noopener noreferrer"
-          ></a>
+          >
+            <FaLinkedin size={18} />
+          </a>
         </div>
 
         <p className="footer__copyright">

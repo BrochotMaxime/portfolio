@@ -1,6 +1,8 @@
 @use "../abstracts/variables" as *;
 
 .header {
+  position: relative;
+  z-index: 100;
   height: $header-height;
   border-bottom: 1px solid $color-border;
   background-color: $color-surface;
@@ -10,6 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   height: 100%;
   width: 100%;
   max-width: $container-max-width;
@@ -18,7 +21,7 @@
 }
 
 .header__logo,
-.header__nav {
+.header__link {
   color: $color-text;
   text-decoration: none;
 }
@@ -28,13 +31,7 @@
 }
 
 .header__nav {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.header__link {
-  color: $color-text;
-  text-decoration: none;
+  display: none;
 }
 
 .header__link:hover,
@@ -46,6 +43,49 @@
   font-weight: 600;
 }
 
-.header__mobile {
+.header__menu-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  border: 0;
+  background: transparent;
+  color: $color-text;
+  font: inherit;
+  cursor: pointer;
+}
+
+.header__menu-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.header__mobile-nav {
   display: none;
+}
+
+.header__mobile-nav--open {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid $color-border;
+  background-color: $color-surface;
+}
+
+@media (min-width: 768px) {
+  .header__nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .header__menu-button,
+  .header__mobile-nav {
+    display: none;
+  }
 }

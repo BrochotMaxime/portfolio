@@ -1,4 +1,6 @@
 import { Helmet } from "react-helmet-async";
+import { Mail, Download } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 import Button from "../components/ui/Button";
 import Card from "../components/ui/Card";
@@ -33,7 +35,10 @@ function ContactPage() {
               </p>
 
               <div className="contact-page__actions">
-                <Button href="mailto:brochot.max@gmail.com">Email me</Button>
+                <Button href="mailto:brochot.max@gmail.com">
+                  <Mail size={18} />
+                  <span>Email me</span>
+                </Button>
 
                 <Button
                   href="https://github.com/BrochotMaxime"
@@ -41,7 +46,8 @@ function ContactPage() {
                   rel="noopener noreferrer"
                   variant="secondary"
                 >
-                  GitHub
+                  <FaGithub size={18} />
+                  <span>GitHub</span>
                 </Button>
 
                 <Button
@@ -50,7 +56,8 @@ function ContactPage() {
                   rel="noopener noreferrer"
                   variant="secondary"
                 >
-                  LinkedIn
+                  <FaLinkedin size={18} />
+                  <span>LinkedIn</span>
                 </Button>
 
                 <Button
@@ -59,7 +66,8 @@ function ContactPage() {
                   rel="noopener noreferrer"
                   variant="secondary"
                 >
-                  Download Resume (PDF)
+                  <Download size={18} />
+                  <span>Download Resume (PDF)</span>
                 </Button>
               </div>
             </Card>
