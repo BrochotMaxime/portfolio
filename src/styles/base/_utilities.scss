@@ -1,0 +1,9 @@
+.icon-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  svg {
+    flex-shrink: 0;
+  }
+}
