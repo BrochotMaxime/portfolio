@@ -18,10 +18,7 @@ function ResumePrintPage() {
             <a href="https://github.com/BrochotMaxime">
               github.com/BrochotMaxime
             </a>{" "}
-            ·{" "}
-            <a href="https://www.linkedin.com/in/maxime-brochot-646989171">
-              LinkedIn
-            </a>
+            · <a href="https://maxime-brochot.dev">maxime-brochot.dev</a>
           </address>
         </header>
 
