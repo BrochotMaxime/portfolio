@@ -1,15 +1,19 @@
-import SectionTitle from "../ui/SectionTitle";
+import { useTranslation } from "react-i18next";
+
 import ProjectCard from "../projects/ProjectCard";
+import SectionTitle from "../ui/SectionTitle";
 
 import { projects } from "../../data/projects";
 
 function FeaturedProjectsSection() {
+  const { t } = useTranslation();
+
   return (
     <section id="featured-projects" className="featured-projects-section">
       <div className="container">
         <SectionTitle
-          title="Selected Projects"
-          subtitle="A first overview of the projects that shaped my development journey."
+          title={t("home.featuredProjects.title")}
+          subtitle={t("home.featuredProjects.subtitle")}
         />
 
         <div className="featured-projects-section__grid">
@@ -18,8 +22,8 @@ function FeaturedProjectsSection() {
             .map((project) => (
               <ProjectCard
                 key={project.id}
-                title={project.title}
-                description={project.description}
+                title={t(project.titleKey)}
+                description={t(project.descriptionKey)}
                 technologies={project.technologies}
                 codeUrl={project.codeUrl}
                 demoUrl={project.demoUrl}

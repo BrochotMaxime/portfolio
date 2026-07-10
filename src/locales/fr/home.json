@@ -1,0 +1,21 @@
+{
+  "hero": {
+    "title": "Maxime Brochot — Développeur Web",
+    "subtitle": "Je conçois des applications web claires, maintenables et centrées sur l'utilisateur.",
+    "scrollLabel": "Faire défiler jusqu'aux projets mis en avant",
+    "scrollText": "Défiler"
+  },
+  "featuredProjects": {
+    "title": "Projets sélectionnés",
+    "subtitle": "Un premier aperçu des projets qui ont façonné mon parcours de développeur."
+  },
+  "aboutPreview": {
+    "title": "À propos",
+    "subtitle": "En savoir plus sur mon parcours et ma philosophie de développement.",
+    "description": "Curieux, méthodique et soucieux du détail, j'aime concevoir des applications web claires, maintenables et conçues pour durer."
+  },
+  "contactCTA": {
+    "title": "Travaillons ensemble",
+    "subtitle": "Vous souhaitez discuter d'un projet, d'une opportunité ou simplement échanger ?"
+  }
+}

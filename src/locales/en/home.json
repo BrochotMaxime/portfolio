@@ -1,0 +1,21 @@
+{
+  "hero": {
+    "title": "Maxime Brochot — Web Developer",
+    "subtitle": "Building clear, maintainable and user-focused web applications.",
+    "scrollLabel": "Scroll to featured projects",
+    "scrollText": "Scroll"
+  },
+  "featuredProjects": {
+    "title": "Selected Projects",
+    "subtitle": "A first overview of the projects that shaped my development journey."
+  },
+  "aboutPreview": {
+    "title": "About",
+    "subtitle": "Discover my background and development philosophy.",
+    "description": "Curious, methodical and detail-oriented, I enjoy designing web applications that are clear, maintainable and built to last."
+  },
+  "contactCTA": {
+    "title": "Let's work together",
+    "subtitle": "Interested in discussing a project, an opportunity, or simply getting in touch?"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Portfolio personnel de développeur conçu avec React et SCSS. Le projet met l'accent sur une architecture claire, des composants réutilisables, la documentation et un workflow de développement maintenable."
+  },
+  "trouveTonArtisan": {
+    "title": "Trouve ton artisan",
+    "description": "Application web full-stack réalisée durant ma formation de développeur. Elle permet de rechercher des artisans par catégorie ou par nom grâce à une interface React, une API Node.js et une base de données MySQL."
+  },
+  "portDePlaisanceRussell": {
+    "title": "Port de Plaisance Russell",
+    "description": "API REST développée durant ma formation afin de gérer un port de plaisance. Le projet comprend l'authentification des utilisateurs, des opérations CRUD, la gestion des réservations et une documentation Swagger."
+  },
+  "tifosi": {
+    "title": "Tifosi",
+    "description": "Projet de base de données relationnelle réalisé durant ma formation. Il porte sur la modélisation des données, les scripts SQL, l'intégrité des données et les requêtes complexes avec MySQL."
+  }
+}

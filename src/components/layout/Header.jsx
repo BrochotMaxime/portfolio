@@ -65,7 +65,7 @@ function Header() {
           className="header__menu-button"
           type="button"
           onClick={toggleMenu}
-          aria-label={t("navigation.toggleMenu")}
+          aria-label={t("toggleMenu")}
           aria-expanded={isMenuOpen}
           aria-controls="mobile-navigation"
         >
@@ -78,7 +78,7 @@ function Header() {
         className={`header__mobile-nav ${
           isMenuOpen ? "header__mobile-nav--open" : ""
         }`}
-        aria-label={t("navigation.mobileLabel")}
+        aria-label={t("mobileLabel")}
       >
         {navigationLinks.map((link) => (
           <NavLink

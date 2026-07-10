@@ -2,9 +2,8 @@ export const projects = [
   {
     id: 1,
     slug: "portfolio",
-    title: "Portfolio",
-    description:
-      "Personal developer portfolio built with React and SCSS. The project focuses on clean architecture, reusable components, documentation and a maintainable development workflow.",
+    titleKey: "projects.portfolio.title",
+    descriptionKey: "projects.portfolio.description",
     screenshots: [
       // {
       //   src: "",
@@ -43,9 +42,8 @@ export const projects = [
   {
     id: 2,
     slug: "trouve-ton-artisan",
-    title: "Trouve ton artisan",
-    description:
-      "Full-stack web application built during my developer training. The project allows users to search for artisans by category and name, with a React frontend, a Node.js API and a MySQL database.",
+    titleKey: "projects.trouveTonArtisan.title",
+    descriptionKey: "projects.trouveTonArtisan.description",
     screenshots: [
       {
         src: "/images/projects/trouve-ton-artisan/home.webp",
@@ -82,9 +80,8 @@ export const projects = [
   {
     id: 3,
     slug: "port-de-plaisance-russel",
-    title: "Port de Plaisance Russel",
-    description:
-      "RESTful API developed during my developer training to manage a marina. The project includes user authentication, CRUD operations, reservations management and API documentation with Swagger.",
+    titleKey: "projects.portDePlaisanceRussell.title",
+    descriptionKey: "projects.portDePlaisanceRussell.description",
     screenshots: [
       {
         src: "/images/projects/port-de-plaisance-russel/home.webp",
@@ -128,9 +125,8 @@ export const projects = [
   {
     id: 4,
     slug: "tifosi",
-    title: "Tifosi",
-    description:
-      "Relational database project designed during my developer training. The project focuses on database modelling, SQL scripting, data integrity and complex queries using MySQL.",
+    titleKey: "projects.tifosi.title",
+    descriptionKey: "projects.tifosi.description",
     screenshots: [
       // {
       //   src: "",
