@@ -1,15 +1,31 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-const navigationLinks = [
-  { label: "Projects", path: "/projects" },
-  { label: "About", path: "/about" },
-  { label: "Resume", path: "/resume" },
-  { label: "Contact", path: "/contact" },
-];
+import LanguageSwitcher from "../utilities/LanguageSwitcher";
 
 function Header() {
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navigationLinks = [
+    {
+      label: t("navigation.projects"),
+      path: "/projects",
+    },
+    {
+      label: t("navigation.about"),
+      path: "/about",
+    },
+    {
+      label: t("navigation.resume"),
+      path: "/resume",
+    },
+    {
+      label: t("navigation.contact"),
+      path: "/contact",
+    },
+  ];
 
   const toggleMenu = () => {
     setIsMenuOpen((previous) => !previous);
@@ -25,41 +41,48 @@ function Header() {
   return (
     <header className="header">
       <div className="header__container">
-        <Link className="header__logo" to="/">
+        <Link className="header__logo" to="/" onClick={closeMenu}>
           Maxime Brochot
         </Link>
 
-        <nav className="header__nav">
-          {navigationLinks.map((link) => (
-            <NavLink
-              key={link.label}
-              className={getLinkClassName}
-              to={link.path}
-            >
-              {link.label}
-            </NavLink>
-          ))}
-        </nav>
+        <div className="header__desktop">
+          <nav className="header__nav" aria-label={t("navigation.mainLabel")}>
+            {navigationLinks.map((link) => (
+              <NavLink
+                key={link.path}
+                className={getLinkClassName}
+                to={link.path}
+              >
+                {link.label}
+              </NavLink>
+            ))}
+          </nav>
+
+          <LanguageSwitcher />
+        </div>
 
         <button
           className="header__menu-button"
           type="button"
           onClick={toggleMenu}
-          aria-label="Toggle navigation menu"
+          aria-label={t("navigation.toggleMenu")}
           aria-expanded={isMenuOpen}
+          aria-controls="mobile-navigation"
         >
           ☰
         </button>
       </div>
 
       <nav
+        id="mobile-navigation"
         className={`header__mobile-nav ${
           isMenuOpen ? "header__mobile-nav--open" : ""
         }`}
+        aria-label={t("navigation.mobileLabel")}
       >
         {navigationLinks.map((link) => (
           <NavLink
-            key={link.label}
+            key={link.path}
             className={getLinkClassName}
             to={link.path}
             onClick={closeMenu}
@@ -67,6 +90,8 @@ function Header() {
             {link.label}
           </NavLink>
         ))}
+
+        <LanguageSwitcher />
       </nav>
     </header>
   );

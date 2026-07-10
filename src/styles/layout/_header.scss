@@ -30,6 +30,10 @@
   font-weight: 700;
 }
 
+.header__desktop {
+  display: none;
+}
+
 .header__nav {
   display: none;
 }
@@ -64,6 +68,10 @@
   display: none;
 }
 
+.header__mobile-nav .language-switcher {
+  margin-top: 0.5rem;
+}
+
 .header__mobile-nav--open {
   position: absolute;
   top: 100%;
@@ -79,6 +87,12 @@
 }
 
 @media (min-width: 768px) {
+  .header__desktop {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
   .header__nav {
     display: flex;
     gap: 1.5rem;
