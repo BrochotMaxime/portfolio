@@ -1,7 +1,8 @@
 {
   "viewProjects": "View projects",
   "contactMe": "Contact me",
-  "downloadResume": "Download resume",
+  "downloadResume": "Download resume (PDF)",
   "learnMore": "Learn more",
-  "aboutMe": "About me"
+  "aboutMe": "About me",
+  "emailMe": "Email me"
 }

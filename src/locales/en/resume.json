@@ -1,1 +1,104 @@
-{}
+{
+  "meta": {
+    "title": "Resume | Maxime Brochot",
+    "printTitle": "Resume PDF | Maxime Brochot",
+    "description": "Resume of Maxime Brochot, Web and Mobile Web Developer with an engineering background."
+  },
+  "sections": {
+    "profile": "Profile",
+    "skills": "Technical skills",
+    "projects": "Projects",
+    "experience": "Professional experience",
+    "education": "Education",
+    "languages": "Languages",
+    "interests": "Interests"
+  },
+  "profile": {
+    "paragraph1": "Web & Mobile Web Developer with an engineering background, combining analytical thinking, structured problem-solving and a strong focus on building clear, maintainable and user-focused applications.",
+    "paragraph2": "Passionate about software architecture, continuous improvement and clean development practices, I enjoy turning ideas into reliable solutions through thoughtful design and modern web technologies."
+  },
+  "skills": {
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "databases": "Databases",
+    "tools": "Tools & quality",
+    "responsiveDesign": "Responsive Design",
+    "accessibility": "Accessibility",
+    "authentication": "Authentication",
+    "databaseModelling": "Database modelling"
+  },
+  "projects": {
+    "portfolio": {
+      "description": "Designed and developed a personal portfolio focused on reusable components, maintainable architecture, accessibility, SEO and professional development practices."
+    },
+    "trouveTonArtisan": {
+      "description": "Built a full-stack web application allowing users to search local artisans by category or name through a React frontend, a REST API and a relational database."
+    },
+    "portDePlaisanceRussell": {
+      "description": "Developed a RESTful API with authentication, CRUD operations, reservation management and interactive API documentation."
+    },
+    "tifosi": {
+      "description": "Designed and implemented a normalized relational database with SQL scripts, integrity constraints and advanced queries."
+    }
+  },
+  "experience": {
+    "castel": {
+      "role": "Production Manager",
+      "dateLocation": "2023 - 2024 · Mouscron, Belgium",
+      "tasks": {
+        "planning": "Coordinated production planning and daily operations in an industrial environment.",
+        "management": "Led multidisciplinary teams while ensuring quality, productivity and delivery objectives.",
+        "improvement": "Contributed to continuous improvement initiatives and operational decision-making."
+      }
+    },
+    "tami": {
+      "role": "Production Engineer",
+      "dateLocation": "2020 - 2022 · Nyons, France",
+      "tasks": {
+        "management": "Supported production management and coordinated operators and technicians.",
+        "optimization": "Participated in process optimization and industrial improvement projects.",
+        "erp": "Contributed to ERP implementation and production data management."
+      }
+    },
+    "airFrance": {
+      "role": "Engineering Internship",
+      "dateLocation": "2018 · 6-month internship",
+      "tasks": {
+        "improvement": "Worked on continuous improvement initiatives within aircraft maintenance operations.",
+        "analysis": "Analysed production workflows and proposed process optimizations.",
+        "projectManagement": "Participated in project management activities with multidisciplinary teams."
+      }
+    }
+  },
+  "education": {
+    "webDevelopment": {
+      "title": "Web & Mobile Web Developer",
+      "date": "2025 - Present",
+      "description": "Professional training focused on full-stack web development, covering frontend and backend technologies, databases, software architecture and modern development practices."
+    },
+    "engineering": {
+      "title": "Engineering Degree - High Performance Materials",
+      "date": "2014 - 2018",
+      "description": "Engineering degree providing a strong foundation in analytical thinking, problem-solving, project management and continuous improvement."
+    },
+    "preparatoryClasses": {
+      "title": "Preparatory Classes (CPGE)",
+      "field": "Physics & Chemistry",
+      "date": "2011 - 2014",
+      "description": "Intensive scientific curriculum developing rigor, autonomy and strong analytical skills."
+    }
+  },
+  "languages": {
+    "french": "French · Native",
+    "english": "English · Professional working proficiency"
+  },
+  "interests": {
+    "trailRunning": "Trail running",
+    "scaleModelPainting": "Scale model painting",
+    "videoGames": "Video games"
+  },
+  "header": {
+    "role": "Web & Mobile Web Developer",
+    "location": "Lille, France"
+  }
+}

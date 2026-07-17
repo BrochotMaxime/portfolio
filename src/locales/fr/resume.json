@@ -1,1 +1,104 @@
-{}
+{
+  "meta": {
+    "title": "CV | Maxime Brochot",
+    "printTitle": "CV PDF | Maxime Brochot",
+    "description": "CV de Maxime Brochot, développeur web et web mobile issu d'une formation d'ingénieur."
+  },
+  "sections": {
+    "profile": "Profil",
+    "skills": "Compétences techniques",
+    "projects": "Projets",
+    "experience": "Expérience professionnelle",
+    "education": "Formation",
+    "languages": "Langues",
+    "interests": "Centres d'intérêt"
+  },
+  "profile": {
+    "paragraph1": "Développeur web et web mobile issu d'une formation d'ingénieur, j'associe esprit d'analyse, résolution structurée des problèmes et volonté de concevoir des applications claires, maintenables et centrées sur l'utilisateur.",
+    "paragraph2": "Intéressé par l'architecture des applications, l'amélioration continue et les bonnes pratiques de développement, j'aime transformer des idées en solutions fiables grâce à une conception réfléchie et aux technologies web modernes."
+  },
+  "skills": {
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "databases": "Bases de données",
+    "tools": "Outils et qualité",
+    "responsiveDesign": "Responsive design",
+    "accessibility": "Accessibilité",
+    "authentication": "Authentification",
+    "databaseModelling": "Modélisation de bases de données"
+  },
+  "projects": {
+    "portfolio": {
+      "description": "Conception et développement d'un portfolio personnel axé sur les composants réutilisables, une architecture maintenable, l'accessibilité, le référencement et les pratiques professionnelles de développement."
+    },
+    "trouveTonArtisan": {
+      "description": "Développement d'une application web full-stack permettant de rechercher des artisans par catégorie ou par nom grâce à une interface React, une API REST et une base de données relationnelle."
+    },
+    "portDePlaisanceRussell": {
+      "description": "Développement d'une API REST comprenant une authentification, des opérations CRUD, la gestion des réservations et une documentation interactive."
+    },
+    "tifosi": {
+      "description": "Conception et implémentation d'une base de données relationnelle normalisée avec des scripts SQL, des contraintes d'intégrité et des requêtes avancées."
+    }
+  },
+  "experience": {
+    "castel": {
+      "role": "Responsable de production",
+      "dateLocation": "2023 - 2024 · Mouscron, Belgique",
+      "tasks": {
+        "planning": "Coordination de la planification de la production et des opérations quotidiennes dans un environnement industriel.",
+        "management": "Encadrement d'équipes pluridisciplinaires dans le respect des objectifs de qualité, de productivité et de délais.",
+        "improvement": "Contribution aux démarches d'amélioration continue et aux décisions opérationnelles."
+      }
+    },
+    "tami": {
+      "role": "Ingénieur de production",
+      "dateLocation": "2020 - 2022 · Nyons, France",
+      "tasks": {
+        "management": "Participation à la gestion de la production et coordination des opérateurs et techniciens.",
+        "optimization": "Participation à l'optimisation des processus et à des projets d'amélioration industrielle.",
+        "erp": "Contribution à la mise en place d'un ERP et à la gestion des données de production."
+      }
+    },
+    "airFrance": {
+      "role": "Stage ingénieur",
+      "dateLocation": "2018 · Stage de 6 mois",
+      "tasks": {
+        "improvement": "Participation à des démarches d'amélioration continue dans le domaine de la maintenance aéronautique.",
+        "analysis": "Analyse des flux de production et proposition d'optimisations des processus.",
+        "projectManagement": "Participation à la gestion de projets avec des équipes pluridisciplinaires."
+      }
+    }
+  },
+  "education": {
+    "webDevelopment": {
+      "title": "Développeur Web et Web Mobile",
+      "date": "2025 - Aujourd'hui",
+      "description": "Formation professionnelle axée sur le développement web full-stack, couvrant les technologies frontend et backend, les bases de données, l'architecture des applications et les pratiques modernes de développement."
+    },
+    "engineering": {
+      "title": "Diplôme d'ingénieur - Matériaux haute performance",
+      "date": "2014 - 2018",
+      "description": "Formation d'ingénieur apportant de solides compétences en analyse, résolution de problèmes, gestion de projet et amélioration continue."
+    },
+    "preparatoryClasses": {
+      "title": "Classes préparatoires aux grandes écoles (CPGE)",
+      "field": "Physique et Chimie",
+      "date": "2011 - 2014",
+      "description": "Formation scientifique intensive développant la rigueur, l'autonomie et de solides capacités d'analyse."
+    }
+  },
+  "languages": {
+    "french": "Français · Langue maternelle",
+    "english": "Anglais · Niveau professionnel"
+  },
+  "interests": {
+    "trailRunning": "Trail",
+    "scaleModelPainting": "Peinture de figurines",
+    "videoGames": "Jeux vidéo"
+  },
+  "header": {
+    "role": "Développeur Web et Web Mobile",
+    "location": "Lille, France"
+  }
+}

@@ -1,7 +1,8 @@
 {
   "viewProjects": "Voir les projets",
   "contactMe": "Me contacter",
-  "downloadResume": "Télécharger le CV",
+  "downloadResume": "Télécharger le CV (PDF)",
   "learnMore": "En savoir plus",
-  "aboutMe": "À propos de moi"
+  "aboutMe": "À propos de moi",
+  "emailMe": "M'envoyer un e-mail"
 }

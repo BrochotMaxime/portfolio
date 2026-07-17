@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
@@ -6,14 +7,13 @@ import Badge from "../components/ui/Badge";
 import Card from "../components/ui/Card";
 
 function ResumePage() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Helmet>
-        <title>Resume | Maxime Brochot</title>
-        <meta
-          name="description"
-          content="Resume of Maxime Brochot, Web and Mobile Web Developer with an engineering background."
-        />
+        <title>{t("resume.meta.title")}</title>
+        <meta name="description" content={t("resume.meta.description")} />
       </Helmet>
 
       <section className="resume-page">
@@ -22,52 +22,42 @@ function ResumePage() {
 
           <div className="resume-page__content">
             <Card>
-              <h2>Profile</h2>
+              <h2>{t("resume.sections.profile")}</h2>
 
-              <p>
-                Web & Mobile Web Developer with an engineering background,
-                combining analytical thinking, structured problem-solving and a
-                strong focus on building clear, maintainable and user-focused
-                applications.
-              </p>
+              <p>{t("resume.profile.paragraph1")}</p>
 
-              <p>
-                Passionate about software architecture, continuous improvement
-                and clean development practices, I enjoy turning ideas into
-                reliable solutions through thoughtful design and modern web
-                technologies.
-              </p>
+              <p>{t("resume.profile.paragraph2")}</p>
             </Card>
 
             <Card>
-              <h2>Technical skills</h2>
+              <h2>{t("resume.sections.skills")}</h2>
 
               <div className="resume-page__skills">
                 <div>
-                  <h3>Frontend</h3>
+                  <h3>{t("resume.skills.frontend")}</h3>
                   <div className="resume-page__badges">
                     <Badge>React</Badge>
                     <Badge>JavaScript</Badge>
                     <Badge>HTML5</Badge>
                     <Badge>CSS3</Badge>
                     <Badge>SCSS</Badge>
-                    <Badge>Responsive Design</Badge>
-                    <Badge>Accessibility</Badge>
+                    <Badge>{t("resume.skills.responsiveDesign")}</Badge>
+                    <Badge>{t("resume.skills.accessibility")}</Badge>
                   </div>
                 </div>
 
                 <div>
-                  <h3>Backend</h3>
+                  <h3>{t("resume.skills.backend")}</h3>
                   <div className="resume-page__badges">
                     <Badge>Node.js</Badge>
                     <Badge>Express</Badge>
                     <Badge>REST API</Badge>
-                    <Badge>Authentication</Badge>
+                    <Badge>{t("resume.skills.authentication")}</Badge>
                   </div>
                 </div>
 
                 <div>
-                  <h3>Databases</h3>
+                  <h3>{t("resume.skills.databases")}</h3>
                   <div className="resume-page__badges">
                     <Badge>MySQL</Badge>
                     <Badge>MongoDB</Badge>
@@ -77,7 +67,7 @@ function ResumePage() {
                 </div>
 
                 <div>
-                  <h3>Tools & quality</h3>
+                  <h3>{t("resume.skills.tools")}</h3>
                   <div className="resume-page__badges">
                     <Badge>Git</Badge>
                     <Badge>GitHub</Badge>
@@ -92,156 +82,125 @@ function ResumePage() {
             </Card>
 
             <Card>
-              <h2>Projects</h2>
+              <h2>{t("resume.sections.projects")}</h2>
 
               <div className="resume-page__items">
                 <article>
                   <h3>
-                    <Link to="/projects/portfolio">Portfolio</Link>
+                    <Link to="/projects/portfolio">
+                      {t("resume.projects.portfolio.description")}
+                    </Link>
                   </h3>
                   <p>
                     <strong>React · React Router · SCSS · Vite</strong>
                   </p>
-                  <p>
-                    Designed and developed a personal portfolio focused on
-                    reusable components, maintainable architecture,
-                    accessibility, SEO and professional development practices.
-                  </p>
+                  <p>{t("resume.projects.portfolio.description")}</p>
                 </article>
 
                 <article>
                   <h3>
                     <Link to="/projects/trouve-ton-artisan">
-                      Trouve ton artisan
+                      {t("projects.trouveTonArtisan.title")}
                     </Link>
                   </h3>
+
                   <p>
                     <strong>
                       React · Node.js · Express · MySQL · Sequelize
                     </strong>
                   </p>
-                  <p>
-                    Built a full-stack web application allowing users to search
-                    local artisans by category or name through a React frontend,
-                    a REST API and a relational database.
-                  </p>
+
+                  <p>{t("resume.projects.trouveTonArtisan.description")}</p>
                 </article>
 
                 <article>
                   <h3>
                     <Link to="/projects/port-de-plaisance-russell">
-                      Port de Plaisance Russell
+                      {t("projects.portDePlaisanceRussell.title")}
                     </Link>
                   </h3>
+
                   <p>
                     <strong>
                       Node.js · Express · MongoDB · Mongoose · Swagger
                     </strong>
                   </p>
+
                   <p>
-                    Developed a RESTful API with authentication, CRUD
-                    operations, reservation management and interactive API
-                    documentation.
+                    {t("resume.projects.portDePlaisanceRussell.description")}
                   </p>
                 </article>
 
                 <article>
                   <h3>
-                    <Link to="/projects/tifosi">Tifosi</Link>
+                    <Link to="/projects/tifosi">
+                      {t("projects.tifosi.title")}
+                    </Link>
                   </h3>
+
                   <p>
-                    <strong>MySQL · SQL · Database modelling</strong>
+                    <strong>
+                      MySQL · SQL · {t("resume.skills.databaseModelling")}
+                    </strong>
                   </p>
-                  <p>
-                    Designed and implemented a normalized relational database
-                    with SQL scripts, integrity constraints and advanced
-                    queries.
-                  </p>
+
+                  <p>{t("resume.projects.tifosi.description")}</p>
                 </article>
               </div>
             </Card>
 
             <Card>
-              <h2>Professional experience</h2>
+              <h2>{t("resume.sections.experience")}</h2>
 
               <div className="resume-page__items">
                 <article>
-                  <h3>Production Manager</h3>
+                  <h3>{t("resume.experience.castel.role")}</h3>
 
                   <p>
                     <strong>Castel Engineering</strong>
                   </p>
 
-                  <p>2023 - 2024 · Mouscron, Belgium</p>
+                  <p>{t("resume.experience.castel.dateLocation")}</p>
 
                   <ul>
-                    <li>
-                      Coordinated production planning and daily operations in an
-                      industrial environment.
-                    </li>
-
-                    <li>
-                      Led multidisciplinary teams while ensuring quality,
-                      productivity and delivery objectives.
-                    </li>
-
-                    <li>
-                      Contributed to continuous improvement initiatives and
-                      operational decision-making.
-                    </li>
+                    <li>{t("resume.experience.castel.tasks.planning")}</li>
+                    <li>{t("resume.experience.castel.tasks.management")}</li>
+                    <li>{t("resume.experience.castel.tasks.improvement")}</li>
                   </ul>
                 </article>
 
                 <article>
-                  <h3>Production Engineer</h3>
+                  <h3>{t("resume.experience.tami.role")}</h3>
 
                   <p>
                     <strong>TAMI Industries</strong>
                   </p>
 
-                  <p>2020 - 2022 · Nyons, France</p>
+                  <p>{t("resume.experience.tami.dateLocation")}</p>
 
                   <ul>
-                    <li>
-                      Supported production management and coordinated operators
-                      and technicians.
-                    </li>
-
-                    <li>
-                      Participated in process optimization and industrial
-                      improvement projects.
-                    </li>
-
-                    <li>
-                      Contributed to ERP implementation and production data
-                      management.
-                    </li>
+                    <li>{t("resume.experience.tami.tasks.management")}</li>
+                    <li>{t("resume.experience.tami.tasks.optimization")}</li>
+                    <li>{t("resume.experience.tami.tasks.erp")}</li>
                   </ul>
                 </article>
 
                 <article>
-                  <h3>Engineering Internship</h3>
+                  <h3>{t("resume.experience.airFrance.role")}</h3>
 
                   <p>
                     <strong>Air France Industries</strong>
                   </p>
 
-                  <p>2018 · 6-month internship</p>
+                  <p>{t("resume.experience.airFrance.dateLocation")}</p>
 
                   <ul>
                     <li>
-                      Worked on continuous improvement initiatives within
-                      aircraft maintenance operations.
+                      {t("resume.experience.airFrance.tasks.improvement")}
                     </li>
-
+                    <li>{t("resume.experience.airFrance.tasks.analysis")}</li>
                     <li>
-                      Analysed production workflows and proposed process
-                      optimizations.
-                    </li>
-
-                    <li>
-                      Participated in project management activities with
-                      multidisciplinary teams.
+                      {t("resume.experience.airFrance.tasks.projectManagement")}
                     </li>
                   </ul>
                 </article>
@@ -249,74 +208,65 @@ function ResumePage() {
             </Card>
 
             <Card>
-              <h2>Education</h2>
+              <h2>{t("resume.sections.education")}</h2>
 
               <div className="resume-page__items">
                 <article>
-                  <h3>Web & Mobile Web Developer</h3>
+                  <h3>{t("resume.education.webDevelopment.title")}</h3>
 
                   <p>
                     <strong>Centre Européen de Formation</strong>
                   </p>
 
-                  <p>2025 - Present</p>
+                  <p>{t("resume.education.webDevelopment.date")}</p>
 
-                  <p>
-                    Professional training focused on full-stack web development,
-                    covering frontend and backend technologies, databases,
-                    software architecture and modern development practices.
-                  </p>
+                  <p>{t("resume.education.webDevelopment.description")}</p>
                 </article>
 
                 <article>
-                  <h3>Engineering Degree - High Performance Materials</h3>
+                  <h3>{t("resume.education.engineering.title")}</h3>
 
                   <p>
                     <strong>SIGMA Clermont</strong>
                   </p>
 
-                  <p>2014 - 2018</p>
+                  <p>{t("resume.education.engineering.date")}</p>
 
-                  <p>
-                    Engineering degree providing a strong foundation in
-                    analytical thinking, problem-solving, project management and
-                    continuous improvement.
-                  </p>
+                  <p>{t("resume.education.engineering.description")}</p>
                 </article>
 
                 <article>
-                  <h3>Preparatory Classes (CPGE)</h3>
+                  <h3>{t("resume.education.preparatoryClasses.title")}</h3>
 
                   <p>
-                    <strong>Physics & Chemistry</strong>
+                    <strong>
+                      {t("resume.education.preparatoryClasses.field")}
+                    </strong>
                   </p>
 
-                  <p>2011 - 2014</p>
+                  <p>{t("resume.education.preparatoryClasses.date")}</p>
 
-                  <p>
-                    Intensive scientific curriculum developing rigor, autonomy
-                    and strong analytical skills.
-                  </p>
+                  <p>{t("resume.education.preparatoryClasses.description")}</p>
                 </article>
               </div>
             </Card>
 
             <Card>
-              <h2>Languages</h2>
+              <h2>{t("resume.sections.languages")}</h2>
 
               <div className="resume-page__badges">
-                <Badge>French · Native</Badge>
-                <Badge>English · Professional working proficiency</Badge>
+                <Badge>{t("resume.languages.french")}</Badge>
+                <Badge>{t("resume.languages.english")}</Badge>
               </div>
             </Card>
 
             <Card>
-              <h2>Interests</h2>
+              <h2>{t("resume.sections.interests")}</h2>
 
               <div className="resume-page__badges">
-                <Badge>Trail running</Badge>
-                <Badge>Scale model painting</Badge>
-                <Badge>Video games</Badge>
+                <Badge>{t("resume.interests.trailRunning")}</Badge>
+                <Badge>{t("resume.interests.scaleModelPainting")}</Badge>
+                <Badge>{t("resume.interests.videoGames")}</Badge>
               </div>
             </Card>
           </div>

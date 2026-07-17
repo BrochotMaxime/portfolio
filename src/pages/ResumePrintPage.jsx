@@ -1,19 +1,23 @@
+import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 
 function ResumePrintPage() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Helmet>
-        <title>Resume PDF | Maxime Brochot</title>
+        <title>{t("resume.meta.printTitle")}</title>
       </Helmet>
 
       <main className="resume-print">
         <header className="resume-print__header">
           <h1>Maxime Brochot</h1>
-          <p>Web & Mobile Web Developer</p>
+
+          <p>{t("resume.header.role")}</p>
 
           <address>
-            Lille, France ·{" "}
+            {t("resume.header.location")} ·{" "}
             <a href="mailto:brochot.max@gmail.com">brochot.max@gmail.com</a> ·{" "}
             <a href="https://github.com/BrochotMaxime">
               github.com/BrochotMaxime
@@ -23,148 +27,156 @@ function ResumePrintPage() {
         </header>
 
         <section>
-          <h2>Profile</h2>
+          <h2>{t("resume.sections.profile")}</h2>
+
+          <p>{t("resume.profile.paragraph1")}</p>
+        </section>
+
+        <section>
+          <h2>{t("resume.sections.skills")}</h2>
+
           <p>
-            Web & Mobile Web Developer with an engineering background, combining
-            analytical thinking, structured problem-solving and a strong focus
-            on building clear, maintainable and user-focused applications.
+            <strong>{t("resume.skills.frontend")}:</strong> React, JavaScript,
+            HTML5, CSS3, SCSS, {t("resume.skills.accessibility")}
+          </p>
+
+          <p>
+            <strong>{t("resume.skills.backend")}:</strong> Node.js, Express,
+            REST API, {t("resume.skills.authentication")}
+          </p>
+
+          <p>
+            <strong>{t("resume.skills.databases")}:</strong> MySQL, MongoDB,
+            Sequelize, Mongoose
+          </p>
+
+          <p>
+            <strong>{t("resume.skills.tools")}:</strong> Git, GitHub, Vite,
+            Swagger, ESLint, Prettier, ADR
           </p>
         </section>
 
         <section>
-          <h2>Technical Skills</h2>
-          <p>
-            <strong>Frontend:</strong> React, JavaScript, HTML5, CSS3, SCSS,
-            Accessibility
-          </p>
-          <p>
-            <strong>Backend:</strong> Node.js, Express, REST API, Authentication
-          </p>
-          <p>
-            <strong>Databases:</strong> MySQL, MongoDB, Sequelize, Mongoose
-          </p>
-          <p>
-            <strong>Tools:</strong> Git, GitHub, Vite, Swagger, ESLint,
-            Prettier, ADR
-          </p>
-        </section>
-
-        <section>
-          <h2>Projects</h2>
+          <h2>{t("resume.sections.projects")}</h2>
 
           <article>
-            <h3>Portfolio</h3>
+            <h3>{t("projects.portfolio.title")}</h3>
+
             <p className="resume-print__meta">
               React · React Router · SCSS · Vite
             </p>
-            <p>
-              Personal portfolio focused on reusable components, maintainable
-              architecture, accessibility, SEO and professional development
-              practices.
-            </p>
+
+            <p>{t("resume.projects.portfolio.description")}</p>
           </article>
 
           <article>
-            <h3>Trouve ton artisan</h3>
+            <h3>{t("projects.trouveTonArtisan.title")}</h3>
+
             <p className="resume-print__meta">
               React · Node.js · Express · MySQL · Sequelize
             </p>
-            <p>
-              Full-stack application allowing users to search local artisans
-              through a React frontend, REST API and relational database.
-            </p>
+
+            <p>{t("resume.projects.trouveTonArtisan.description")}</p>
           </article>
 
           <article>
-            <h3>Port de Plaisance Russell</h3>
+            <h3>{t("projects.portDePlaisanceRussell.title")}</h3>
+
             <p className="resume-print__meta">
               Node.js · Express · MongoDB · Swagger
             </p>
-            <p>
-              RESTful API with authentication, CRUD operations, reservation
-              management and interactive API documentation.
-            </p>
+
+            <p>{t("resume.projects.portDePlaisanceRussell.description")}</p>
           </article>
         </section>
 
         <section>
-          <h2>Professional Experience</h2>
+          <h2>{t("resume.sections.experience")}</h2>
 
           <article>
-            <h3>Production Manager — Castel Engineering</h3>
+            <h3>{t("resume.experience.castel.role")} — Castel Engineering</h3>
+
             <p className="resume-print__meta">
-              2023 - 2024 · Mouscron, Belgium
+              {t("resume.experience.castel.dateLocation")}
             </p>
+
             <ul>
-              <li>
-                Coordinated production planning and daily operations in an
-                industrial environment.
-              </li>
-              <li>
-                Led multidisciplinary teams while ensuring quality, productivity
-                and delivery objectives.
-              </li>
+              <li>{t("resume.experience.castel.tasks.planning")}</li>
+
+              <li>{t("resume.experience.castel.tasks.management")}</li>
             </ul>
           </article>
 
           <article>
-            <h3>Production Engineer — TAMI Industries</h3>
-            <p className="resume-print__meta">2020 - 2022 · Nyons, France</p>
+            <h3>{t("resume.experience.tami.role")} — TAMI Industries</h3>
+
+            <p className="resume-print__meta">
+              {t("resume.experience.tami.dateLocation")}
+            </p>
+
             <ul>
-              <li>
-                Supported production management and coordinated operators and
-                technicians.
-              </li>
-              <li>
-                Participated in process optimization and industrial improvement
-                projects.
-              </li>
-              <li>
-                Contributed to ERP implementation and production data
-                management.
-              </li>
+              <li>{t("resume.experience.tami.tasks.management")}</li>
+
+              <li>{t("resume.experience.tami.tasks.optimization")}</li>
+
+              <li>{t("resume.experience.tami.tasks.erp")}</li>
             </ul>
           </article>
 
           <article>
-            <h3>Engineering Internship — Air France Industries</h3>
-            <p className="resume-print__meta">2018 · 6-month internship</p>
+            <h3>
+              {t("resume.experience.airFrance.role")} — Air France Industries
+            </h3>
+
+            <p className="resume-print__meta">
+              {t("resume.experience.airFrance.dateLocation")}
+            </p>
+
             <ul>
-              <li>
-                Worked on continuous improvement projects within aircraft
-                maintenance operations.
-              </li>
-              <li>
-                Analysed production workflows and proposed process
-                optimizations.
-              </li>
+              <li>{t("resume.experience.airFrance.tasks.improvement")}</li>
+
+              <li>{t("resume.experience.airFrance.tasks.analysis")}</li>
             </ul>
           </article>
         </section>
 
         <section>
-          <h2>Education</h2>
+          <h2>{t("resume.sections.education")}</h2>
+
           <p>
-            <strong>Web & Mobile Web Developer</strong> — Centre Européen de
-            Formation · In progress
+            <strong>{t("resume.education.webDevelopment.title")}</strong> —
+            Centre Européen de Formation ·{" "}
+            {t("resume.education.webDevelopment.date")}
           </p>
+
           <p>
-            <strong>Engineering Degree</strong> — SIGMA Clermont · 2018
+            <strong>{t("resume.education.engineering.title")}</strong> — SIGMA
+            Clermont · {t("resume.education.engineering.date")}
           </p>
+
           <p>
-            <strong>Preparatory Classes</strong> — Physics & Chemistry · 2011 -
-            2014
+            <strong>{t("resume.education.preparatoryClasses.title")}</strong> —{" "}
+            {t("resume.education.preparatoryClasses.field")} ·{" "}
+            {t("resume.education.preparatoryClasses.date")}
           </p>
         </section>
 
         <section>
-          <h2>Languages</h2>
-          <p>French — Native · English — Professional working proficiency</p>
+          <h2>{t("resume.sections.languages")}</h2>
+
+          <p>
+            {t("resume.languages.french")} · {t("resume.languages.english")}
+          </p>
         </section>
 
         <section>
-          <h2>Interests</h2>
-          <p>Trail running · Scale model painting · Video games</p>
+          <h2>{t("resume.sections.interests")}</h2>
+
+          <p>
+            {t("resume.interests.trailRunning")} ·{" "}
+            {t("resume.interests.scaleModelPainting")} ·{" "}
+            {t("resume.interests.videoGames")}
+          </p>
         </section>
       </main>
     </>
