@@ -4,5 +4,16 @@
   "downloadResume": "Download resume (PDF)",
   "learnMore": "Learn more",
   "aboutMe": "About me",
-  "emailMe": "Email me"
+  "emailMe": "Email me",
+  "backToProjects": "Back to projects",
+
+  "viewCode": "View code",
+  "liveDemo": "Live demo",
+  "viewProject": "View project",
+
+  "aria": {
+    "viewSourceCode": "View source code for {{title}}",
+    "openLiveDemo": "Open live demo for {{title}}",
+    "viewProjectDetails": "View project details for {{title}}"
+  }
 }

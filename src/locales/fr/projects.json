@@ -1,18 +1,130 @@
 {
+  "page": {
+    "meta": {
+      "title": "Projets | Maxime Brochot",
+      "description": "Découvrez les projets de développement web de Maxime Brochot, incluant des réalisations frontend, full-stack, API et bases de données."
+    },
+
+    "header": {
+      "title": "Projets",
+      "subtitle": "Une sélection de projets illustrant mon approche du développement, mes compétences techniques et mon attention portée à la maintenabilité."
+    },
+
+    "sections": {
+      "overview": "Présentation",
+      "technologyStack": "Technologies utilisées",
+      "technicalChallenges": "Défis techniques",
+      "architecture": "Architecture",
+      "lessonsLearned": "Enseignements tirés",
+      "resources": "Ressources",
+      "screenshots": "Captures d'écran"
+    },
+
+    "gallery": {
+      "openImage": "Ouvrir l'aperçu de l'image : {{description}}",
+      "close": "Fermer l'aperçu de l'image",
+      "previous": "Image précédente",
+      "next": "Image suivante",
+      "dialogLabel": "Aperçu des captures d'écran du projet"
+    },
+
+    "notFound": {
+      "metaTitle": "Projet introuvable | Maxime Brochot",
+      "metaDescription": "Le projet demandé est introuvable dans le portfolio de Maxime Brochot.",
+      "title": "Projet introuvable",
+      "subtitle": "Le projet que vous recherchez n'existe pas."
+    }
+  },
+
   "portfolio": {
     "title": "Portfolio",
-    "description": "Portfolio personnel de développeur conçu avec React et SCSS. Le projet met l'accent sur une architecture claire, des composants réutilisables, la documentation et un workflow de développement maintenable."
+
+    "cardDescription": "Portfolio personnel développé avec React et SCSS, mettant l'accent sur une architecture maintenable, l'accessibilité et les bonnes pratiques professionnelles de développement.",
+
+    "overview": "Ce portfolio est un projet personnel conçu pour présenter mon travail, mes compétences techniques et mon approche du développement au travers d'une application web moderne et maintenable. Développé avec React, React Router et SCSS, il a également été l'occasion de concevoir une bibliothèque de composants réutilisables, d'améliorer l'accessibilité, d'optimiser le référencement naturel et de mettre en place une architecture évolutive pour accueillir de futurs projets.",
+
+    "screenshots": {},
+
+    "challenges": {
+      "componentLibrary": "Concevoir une bibliothèque de composants réutilisables garantissant la cohérence de l'ensemble de l'application.",
+      "architecture": "Mettre en place une architecture évolutive tout en conservant une base de code simple à maintenir.",
+      "quality": "Améliorer l'accessibilité, le référencement naturel et le comportement responsive de l'ensemble du portfolio.",
+      "evolution": "Construire un portfolio capable d'évoluer naturellement au fil de l'ajout de nouveaux projets."
+    },
+
+    "architecture": "L'application repose sur une architecture par composants développée avec React et React Router. Des composants d'interface réutilisables tels que Button, Card, Badge et SectionTitle sont partagés dans toute l'application afin de garantir une cohérence visuelle et de simplifier la maintenance. Les données des projets sont centralisées dans des fichiers dédiés, permettant aux pages de se concentrer sur leur rôle d'affichage tout en facilitant l'ajout de futurs projets.",
+
+    "lessonsLearned": "Ce projet m'a conforté dans l'idée qu'il est essentiel de construire des fondations solides avant d'ajouter des fonctionnalités. La conception de composants réutilisables, le maintien d'un système de design cohérent et l'amélioration continue de l'expérience utilisateur sont devenus des éléments centraux de ma manière de développer. Travailler de façon itérative m'a également permis de mesurer l'importance du refactoring régulier et des améliorations progressives pour conserver une base de code propre et évolutive."
   },
+
   "trouveTonArtisan": {
     "title": "Trouve ton artisan",
-    "description": "Application web full-stack réalisée durant ma formation de développeur. Elle permet de rechercher des artisans par catégorie ou par nom grâce à une interface React, une API Node.js et une base de données MySQL."
+
+    "cardDescription": "Application web full-stack réalisée dans le cadre de ma formation de développeur web. Elle permet de rechercher des artisans par catégorie ou par nom grâce à une interface React, une API Node.js et une base de données MySQL.",
+
+    "overview": "Trouve ton artisan est une application web full-stack développée dans le cadre de ma formation de développeur web. Elle permet aux utilisateurs de rechercher des artisans locaux par catégorie ou par nom grâce à une interface simple et accessible. Le projet associe un frontend React, une API REST développée avec Express et une base de données MySQL administrée par Sequelize. Il avait pour objectif de mettre en pratique les principes du développement full-stack tout en accordant une attention particulière à l'architecture, à la maintenabilité et à l'expérience utilisateur.",
+
+    "screenshots": {
+      "home": "Page d'accueil de l'application Trouve ton artisan.",
+      "artisans": "Liste des artisans filtrés par catégorie.",
+      "artisanDetail": "Page de détail d'un artisan présentant ses coordonnées et ses informations professionnelles."
+    },
+
+    "challenges": {
+      "frontendApiSeparation": "Concevoir une séparation claire entre le frontend React et l'API REST.",
+      "databaseIntegrity": "Construire une base de données relationnelle avec Sequelize tout en garantissant l'intégrité des données.",
+      "searchFiltering": "Mettre en œuvre les fonctionnalités de recherche et de filtrage tout en conservant un code facilement maintenable.",
+      "deployment": "Déployer l'application et la connecter à une base de données MySQL distante."
+    },
+
+    "architecture": "L'application repose sur une architecture full-stack classique composée d'un frontend React consommant une API REST développée avec Express. La logique métier est répartie entre des contrôleurs et des modèles, tandis que Sequelize assure les interactions avec la base de données MySQL. Cette séparation permet à chaque couche de l'application d'évoluer indépendamment tout en conservant un projet maintenable et évolutif.",
+
+    "lessonsLearned": "Ce projet a renforcé ma compréhension du développement full-stack et m'a démontré l'importance de concevoir l'architecture d'une application avant d'implémenter les fonctionnalités. Il a également confirmé mon intérêt pour le code propre, les composants réutilisables et le développement incrémental, des principes que j'applique désormais dans chacun de mes projets."
   },
-  "portDePlaisanceRussell": {
-    "title": "Port de Plaisance Russell",
-    "description": "API REST développée durant ma formation afin de gérer un port de plaisance. Le projet comprend l'authentification des utilisateurs, des opérations CRUD, la gestion des réservations et une documentation Swagger."
+
+  "portDePlaisanceRussel": {
+    "title": "Port de Plaisance Russel",
+
+    "cardDescription": "API REST développée dans le cadre de ma formation de développeur web pour gérer les opérations d'un port de plaisance. Le projet comprend une authentification, des opérations CRUD, la gestion des réservations et une documentation interactive de l'API.",
+
+    "overview": "Port de Plaisance Russel est une API REST développée dans le cadre de ma formation de développeur web afin de gérer les opérations d'un port de plaisance. Le projet propose une authentification des utilisateurs, des opérations CRUD pour les catways, les utilisateurs et les réservations, ainsi qu'une documentation interactive avec Swagger. Il avait pour objectif de renforcer ma compréhension de l'architecture backend, de la conception d'API et de la validation des données.",
+
+    "screenshots": {
+      "home": "Page d'accueil de l'application Port de Plaisance Russel.",
+      "dashboard": "Tableau de bord d'administration de l'application Port de Plaisance Russel.",
+      "reservations": "Page de gestion des réservations de l'application Port de Plaisance Russel."
+    },
+
+    "challenges": {
+      "apiDesign": "Concevoir une API REST proposant des routes claires, cohérentes et faciles à maintenir.",
+      "authentication": "Gérer l'authentification des utilisateurs et les sessions de manière sécurisée.",
+      "reservations": "Valider les dates des réservations et empêcher les chevauchements.",
+      "documentation": "Maintenir une documentation Swagger synchronisée avec l'implémentation de l'API."
+    },
+
+    "architecture": "Le backend repose sur une architecture MVC développée avec Express et MongoDB. Les contrôleurs regroupent la logique métier, les modèles Mongoose assurent l'accès aux données et les vues EJS fournissent une interface d'administration légère. L'authentification repose sur des sessions côté serveur, tandis que Swagger documente chaque point d'entrée de l'API afin de faciliter sa compréhension, ses tests et sa maintenance.",
+
+    "lessonsLearned": "Ce projet m'a permis de mieux comprendre la conception et l'organisation d'une application backend indépendante de son client. Il a renforcé l'importance de la validation des données, de la gestion des erreurs et d'une documentation claire des API. J'y ai également acquis une expérience concrète de l'authentification par session, de la modélisation avec MongoDB et de la séparation entre logique métier et présentation."
   },
+
   "tifosi": {
     "title": "Tifosi",
-    "description": "Projet de base de données relationnelle réalisé durant ma formation. Il porte sur la modélisation des données, les scripts SQL, l'intégrité des données et les requêtes complexes avec MySQL."
+
+    "cardDescription": "Projet de base de données relationnelle réalisé dans le cadre de ma formation de développeur web, centré sur la modélisation des données, les scripts SQL, les contraintes d'intégrité et les requêtes avancées avec MySQL.",
+
+    "overview": "Tifosi est un projet de base de données relationnelle réalisé durant ma formation de développeur web afin de concevoir et d'implémenter le modèle de données d'un système de gestion de restaurant. Le projet est principalement axé sur la modélisation des données, l'écriture de scripts SQL et la garantie de l'intégrité des données avec MySQL. Il m'a permis de mettre en pratique les principes des bases de données relationnelles tout en concevant un schéma clair, cohérent et maintenable.",
+
+    "screenshots": {},
+
+    "challenges": {
+      "normalization": "Concevoir une base de données relationnelle normalisée tout en garantissant l'intégrité des données.",
+      "relationships": "Définir les relations et les contraintes entre plusieurs entités.",
+      "sqlScripts": "Écrire les scripts SQL permettant de créer, alimenter et interroger la base de données.",
+      "queries": "Construire des requêtes complexes permettant d'extraire des informations métier pertinentes."
+    },
+
+    "architecture": "La base de données repose sur un modèle relationnel normalisé développé avec MySQL. Les tables sont reliées par des clés primaires et étrangères, tandis que les contraintes garantissent la cohérence et l'intégrité des données. Le projet comprend les scripts SQL de création, d'alimentation et de requêtes avancées, ce qui permet de reproduire facilement la solution et d'en assurer la maintenance.",
+
+    "lessonsLearned": "Ce projet a renforcé ma compréhension de la conception des bases de données relationnelles et m'a démontré l'importance de modéliser les données avant d'écrire les requêtes ou d'implémenter la logique applicative. Il a également confirmé que l'intégrité des données, la normalisation et la qualité des relations constituent les fondations indispensables d'une application fiable."
   }
 }

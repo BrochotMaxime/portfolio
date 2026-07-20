@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 import Badge from "../ui/Badge";
@@ -12,6 +13,8 @@ function ProjectCard({
   demoUrl,
   slug,
 }) {
+  const { t } = useTranslation();
+
   return (
     <Card>
       <h2>{title}</h2>
@@ -29,23 +32,23 @@ function ProjectCard({
           {codeUrl && (
             <Button
               href={codeUrl}
-              aria-label={`View source code for ${title}`}
+              aria-label={t("buttons.aria.viewSourceCode", { title })}
               target="_blank"
               rel="noopener noreferrer"
             >
-              View code
+              {t("buttons.viewCode")}
             </Button>
           )}
 
           {demoUrl && (
             <Button
               href={demoUrl}
-              aria-label={`Open live demo for ${title}`}
+              aria-label={t("buttons.aria.openLiveDemo", { title })}
               variant="secondary"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Live demo
+              {t("buttons.liveDemo")}
             </Button>
           )}
         </div>
@@ -54,9 +57,9 @@ function ProjectCard({
           <Link
             className="project-card__actions-link"
             to={`/projects/${slug}`}
-            aria-label={`View project details for ${title}`}
+            aria-label={t("buttons.aria.viewProjectDetails", { title })}
           >
-            View project
+            {t("buttons.viewProject")}
           </Link>
         )}
       </div>

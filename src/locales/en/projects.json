@@ -1,18 +1,130 @@
 {
+  "page": {
+    "meta": {
+      "title": "Projects | Maxime Brochot",
+      "description": "Explore web development projects by Maxime Brochot, including frontend, full-stack, API and database projects."
+    },
+
+    "header": {
+      "title": "Projects",
+      "subtitle": "A selection of projects that demonstrate my development approach, technical skills and attention to maintainability."
+    },
+
+    "sections": {
+      "overview": "Overview",
+      "technologyStack": "Technology stack",
+      "technicalChallenges": "Technical challenges",
+      "architecture": "Architecture",
+      "lessonsLearned": "Lessons learned",
+      "resources": "Resources",
+      "screenshots": "Screenshots"
+    },
+
+    "gallery": {
+      "openImage": "Open image preview: {{description}}",
+      "close": "Close image preview",
+      "previous": "Previous image",
+      "next": "Next image",
+      "dialogLabel": "Project screenshot preview"
+    },
+
+    "notFound": {
+      "metaTitle": "Project not found | Maxime Brochot",
+      "metaDescription": "The requested project could not be found in Maxime Brochot's portfolio.",
+      "title": "Project not found",
+      "subtitle": "The project you are looking for does not exist."
+    }
+  },
+
   "portfolio": {
     "title": "Portfolio",
-    "description": "Personal developer portfolio built with React and SCSS. The project focuses on clean architecture, reusable components, documentation and a maintainable development workflow."
+
+    "cardDescription": "Personal developer portfolio built with React and SCSS, focused on maintainable architecture, accessibility and professional development practices.",
+
+    "overview": "This portfolio is a personal project designed to present my work, technical skills and development approach through a modern and maintainable web application. Built with React, React Router and SCSS, it was also an opportunity to design a reusable component library, improve accessibility, optimise SEO and create a scalable architecture for future projects.",
+
+    "screenshots": {},
+
+    "challenges": {
+      "componentLibrary": "Designing a reusable component library to ensure consistency across the application.",
+      "architecture": "Creating a scalable project architecture while keeping the codebase easy to maintain.",
+      "quality": "Improving accessibility, SEO and responsive behaviour throughout the portfolio.",
+      "evolution": "Building a portfolio that can evolve naturally as new projects are added."
+    },
+
+    "architecture": "The application follows a component-based architecture built with React and React Router. Reusable UI components such as Button, Card, Badge and SectionTitle are shared across the application to ensure visual consistency and simplify maintenance. Project data is centralised in dedicated data files, allowing pages to remain focused on presentation while making the portfolio easy to extend with future projects.",
+
+    "lessonsLearned": "This project reinforced the importance of building solid foundations before adding features. Designing reusable components, maintaining a consistent design system and continuously refining the user experience became central aspects of my development process. Working iteratively also highlighted the value of regular refactoring and incremental improvements to keep the codebase clean and scalable."
   },
+
   "trouveTonArtisan": {
     "title": "Trouve ton artisan",
-    "description": "Full-stack web application built during my developer training. The project allows users to search for artisans by category and name, with a React frontend, a Node.js API and a MySQL database."
+
+    "cardDescription": "Full-stack web application built during my developer training. The project allows users to search for artisans by category and name, with a React frontend, a Node.js API and a MySQL database.",
+
+    "overview": "Trouve ton artisan is a full-stack web application developed as part of my web developer training. The application helps users find local artisans by category or name through a simple and accessible interface. The project combines a React frontend, a RESTful API built with Express and a MySQL database managed with Sequelize. It was designed to apply full-stack development principles while focusing on clean architecture, maintainability and user experience.",
+
+    "screenshots": {
+      "home": "Home page of the Trouve ton artisan application.",
+      "artisans": "Artisans listing page filtered by category.",
+      "artisanDetail": "Artisan detail page showing contact and professional information."
+    },
+
+    "challenges": {
+      "frontendApiSeparation": "Designing a clear separation between the React frontend and the REST API.",
+      "databaseIntegrity": "Building a relational database with Sequelize and maintaining data integrity.",
+      "searchFiltering": "Implementing search and filtering features while keeping the code maintainable.",
+      "deployment": "Deploying the application and connecting it to a remote MySQL database."
+    },
+
+    "architecture": "The application follows a classic full-stack architecture with a React frontend consuming a REST API developed with Express. Business logic is separated into controllers and models, while Sequelize manages database interactions with MySQL. This separation allows each layer of the application to evolve independently while keeping the project maintainable and scalable.",
+
+    "lessonsLearned": "This project strengthened my understanding of full-stack development and highlighted the importance of planning an application's architecture before implementing features. It also reinforced my appreciation for clean code, reusable components and incremental development, principles that I continue to apply in every new project."
   },
-  "portDePlaisanceRussell": {
-    "title": "Port de Plaisance Russell",
-    "description": "RESTful API developed during my developer training to manage a marina. The project includes user authentication, CRUD operations, reservations management and API documentation with Swagger."
+
+  "portDePlaisanceRussel": {
+    "title": "Port de Plaisance Russel",
+
+    "cardDescription": "RESTful API developed during my web developer training to manage a marina. The project includes authentication, CRUD operations, reservation management and interactive API documentation.",
+
+    "overview": "Port de Plaisance Russel is a RESTful API developed as part of my web developer training to manage the operations of a marina. The project provides user authentication, CRUD operations for catways, users and reservations, as well as interactive API documentation with Swagger. It was designed to strengthen my understanding of backend architecture, API design and data validation.",
+
+    "screenshots": {
+      "home": "Home page of the Port de Plaisance Russel application.",
+      "dashboard": "Administration dashboard of the Port de Plaisance Russel application.",
+      "reservations": "Reservations management page of the Port de Plaisance Russel application."
+    },
+
+    "challenges": {
+      "apiDesign": "Designing a RESTful API with clear and consistent endpoints.",
+      "authentication": "Managing user authentication and server-side sessions securely.",
+      "reservations": "Validating reservation dates and preventing overlapping bookings.",
+      "documentation": "Documenting the API with Swagger while keeping the documentation synchronized with the implementation."
+    },
+
+    "architecture": "The backend follows an MVC architecture built with Express and MongoDB. Controllers handle business logic, Mongoose models manage data access and EJS templates provide a lightweight administration interface. Authentication relies on server-side sessions, while Swagger documents every endpoint, making the API easier to understand, test and maintain.",
+
+    "lessonsLearned": "This project helped me better understand how to design and structure a backend application independently from its client. It reinforced the importance of validation, error handling and clear API documentation. It also gave me practical experience with session-based authentication, MongoDB modelling and maintaining a clean separation between business logic and presentation."
   },
+
   "tifosi": {
     "title": "Tifosi",
-    "description": "Relational database project designed during my developer training. The project focuses on database modelling, SQL scripting, data integrity and complex queries using MySQL."
+
+    "cardDescription": "Relational database project developed during my web developer training, focused on data modelling, SQL scripting, integrity constraints and advanced queries using MySQL.",
+
+    "overview": "Tifosi is a relational database project developed during my web developer training to design and implement the data model of a restaurant management system. The project focuses on database modelling, SQL scripting and data integrity using MySQL. It was an opportunity to apply relational database concepts while designing a clear, consistent and maintainable schema.",
+
+    "screenshots": {},
+
+    "challenges": {
+      "normalization": "Designing a normalized relational database while preserving data integrity.",
+      "relationships": "Defining relationships and constraints between multiple entities.",
+      "sqlScripts": "Writing SQL scripts to create, populate and query the database.",
+      "queries": "Building complex queries to retrieve meaningful business information."
+    },
+
+    "architecture": "The database follows a normalized relational model built with MySQL. Tables are connected through primary and foreign keys, while constraints ensure data consistency and integrity across the application. The project includes SQL scripts for database creation, data insertion and advanced queries, making the solution easy to reproduce and maintain.",
+
+    "lessonsLearned": "This project strengthened my understanding of relational database design and highlighted the importance of modelling data before writing queries or implementing application logic. It also reinforced the value of data integrity, normalization and clear relationships as essential foundations for building reliable applications."
   }
 }

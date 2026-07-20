@@ -4,5 +4,16 @@
   "downloadResume": "Télécharger le CV (PDF)",
   "learnMore": "En savoir plus",
   "aboutMe": "À propos de moi",
-  "emailMe": "M'envoyer un e-mail"
+  "emailMe": "M'envoyer un e-mail",
+  "backToProjects": "Retour aux projets",
+
+  "viewCode": "Voir le code",
+  "liveDemo": "Démo en ligne",
+  "viewProject": "Voir le projet",
+
+  "aria": {
+    "viewSourceCode": "Voir le code source de {{title}}",
+    "openLiveDemo": "Ouvrir la démonstration de {{title}}",
+    "viewProjectDetails": "Voir les détails du projet {{title}}"
+  }
 }
