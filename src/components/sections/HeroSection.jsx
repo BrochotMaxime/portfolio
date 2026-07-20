@@ -29,7 +29,7 @@ function HeroSection() {
             <span className="hero-section__scroll-arrow">⌄</span>
 
             <span className="hero-section__scroll-text">
-              {t("home,hero.scrollText")}
+              {t("home.hero.scrollText")}
             </span>
           </a>
         </div>

@@ -34,7 +34,7 @@
     "trouveTonArtisan": {
       "description": "Built a full-stack web application allowing users to search local artisans by category or name through a React frontend, a REST API and a relational database."
     },
-    "portDePlaisanceRussell": {
+    "portDePlaisanceRussel": {
       "description": "Developed a RESTful API with authentication, CRUD operations, reservation management and interactive API documentation."
     },
     "tifosi": {

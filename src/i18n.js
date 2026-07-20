@@ -9,6 +9,7 @@ import enHome from "./locales/en/home.json";
 import enNavigation from "./locales/en/navigation.json";
 import enProjects from "./locales/en/projects.json";
 import enResume from "./locales/en/resume.json";
+import enLegalNotice from "./locales/en/legalNotice.json";
 
 import frAbout from "./locales/fr/about.json";
 import frButtons from "./locales/fr/buttons.json";
@@ -18,6 +19,7 @@ import frHome from "./locales/fr/home.json";
 import frNavigation from "./locales/fr/navigation.json";
 import frProjects from "./locales/fr/projects.json";
 import frResume from "./locales/fr/resume.json";
+import frLegalNotice from "./locales/fr/legalNotice.json";
 
 const supportedLanguages = ["en", "fr"];
 const savedLanguage = localStorage.getItem("language");
@@ -44,6 +46,7 @@ i18n.use(initReactI18next).init({
         resume: enResume,
         projects: enProjects,
         footer: enFooter,
+        legalNotice: enLegalNotice,
       },
     },
 
@@ -57,6 +60,7 @@ i18n.use(initReactI18next).init({
         resume: frResume,
         projects: frProjects,
         footer: frFooter,
+        legalNotice: frLegalNotice,
       },
     },
   },

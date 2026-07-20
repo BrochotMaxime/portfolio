@@ -88,7 +88,7 @@ function ResumePage() {
                 <article>
                   <h3>
                     <Link to="/projects/portfolio">
-                      {t("resume.projects.portfolio.description")}
+                      {t("projects.portfolio.title")}
                     </Link>
                   </h3>
                   <p>
@@ -116,7 +116,7 @@ function ResumePage() {
                 <article>
                   <h3>
                     <Link to="/projects/port-de-plaisance-russell">
-                      {t("projects.portDePlaisanceRussell.title")}
+                      {t("projects.portDePlaisanceRussel.title")}
                     </Link>
                   </h3>
 

@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Mentions légales | Maxime Brochot",
+    "description": "Informations légales relatives au portfolio personnel de Maxime Brochot."
+  },
+  "header": {
+    "title": "Mentions légales",
+    "subtitle": "Informations légales relatives à ce portfolio."
+  },
+  "publisher": {
+    "title": "Éditeur du site",
+    "name": "Maxime Brochot"
+  },
+  "purpose": {
+    "title": "Objectif du site",
+    "description": "Ce site est un portfolio personnel destiné à présenter des projets de développement web, des compétences techniques et des informations professionnelles."
+  },
+  "intellectualProperty": {
+    "title": "Propriété intellectuelle",
+    "description": "Sauf mention contraire, l'ensemble des contenus présents sur ce site appartient à Maxime Brochot. Toute reproduction ou réutilisation sans autorisation est interdite."
+  },
+  "contact": {
+    "title": "Contact",
+    "beforeLink": "Pour toute demande concernant ce site, veuillez utiliser la",
+    "link": "page de contact",
+    "afterLink": "."
+  }
+}
