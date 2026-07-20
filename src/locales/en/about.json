@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "About | Maxime Brochot",
+    "description": "Learn more about Maxime Brochot, his development mindset, core qualities and approach to building web applications."
+  },
+  "header": {
+    "title": "About me",
+    "subtitle": "A short introduction to my background, mindset and development approach."
+  },
+  "whoIAm": {
+    "title": "Who I am",
+    "paragraph1": "I am a web and mobile web developer focused on building clear, maintainable and user-focused applications.",
+    "paragraph2": "I develop my skills through practical projects, structured learning and continuous improvement, with particular attention to architecture, accessibility and code quality."
+  },
+  "coreQualities": {
+    "title": "Core qualities",
+    "curious": "Curious",
+    "methodical": "Methodical",
+    "reliable": "Reliable",
+    "adaptable": "Adaptable",
+    "detailOriented": "Detail-oriented"
+  },
+  "developmentPhilosophy": {
+    "title": "Development philosophy",
+    "paragraph1": "I believe that good applications are built through deliberate decisions, clear structure and continuous refinement.",
+    "paragraph2": "Each project is an opportunity to improve not only the final result, but also the way it is designed, documented and maintained."
+  }
+}

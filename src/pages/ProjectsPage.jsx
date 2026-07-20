@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 
 import SectionTitle from "../components/ui/SectionTitle";
@@ -6,13 +7,15 @@ import ProjectCard from "../components/projects/ProjectCard";
 import { projects } from "../data/projects";
 
 function ProjectsPage() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Helmet>
-        <title>Projects | Maxime Brochot</title>
+        <title>{t("projects.page.meta.title")}</title>
         <meta
           name="description"
-          content="Explore web development projects by Maxime Brochot, including frontend, full-stack, API and database projects."
+          content={t("projects.page.meta.description")}
         />
       </Helmet>
 
@@ -20,16 +23,16 @@ function ProjectsPage() {
         <div className="container">
           <SectionTitle
             level="h1"
-            title="Projects"
-            subtitle="A selection of projects that demonstrate my development approach, technical skills and attention to maintainability."
+            title={t("projects.page.header.title")}
+            subtitle={t("projects.page.header.subtitle")}
           />
 
           <div className="projects-page__grid">
             {projects.map((project) => (
               <ProjectCard
                 key={project.id}
-                title={project.title}
-                description={project.description}
+                title={t(project.titleKey)}
+                description={t(project.descriptionKey)}
                 technologies={project.technologies}
                 codeUrl={project.codeUrl}
                 demoUrl={project.demoUrl}

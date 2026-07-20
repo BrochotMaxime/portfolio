@@ -1,24 +1,25 @@
+import { useTranslation } from "react-i18next";
+
 import Card from "../ui/Card";
 import Button from "../ui/Button";
 import SectionTitle from "../ui/SectionTitle";
 
 function AboutPreviewSection() {
+  const { t } = useTranslation();
+
   return (
     <section className="about-preview-section">
       <div className="container">
         <SectionTitle
-          title="About"
-          subtitle="Learn more about my journey and development philosophy."
+          title={t("home.aboutPreview.title")}
+          subtitle={t("home.aboutPreview.subtitle")}
         />
 
         <div className="about-preview-section__content">
           <Card>
-            <p>
-              Curious, methodical and detail-oriented, I enjoy designing web
-              applications that are clear, maintainable and built to last.
-            </p>
+            <p>{t("home.aboutPreview.description")}</p>
 
-            <Button to="/about">About me</Button>
+            <Button to="/about">{t("buttons.aboutMe")}</Button>
           </Card>
         </div>
       </div>

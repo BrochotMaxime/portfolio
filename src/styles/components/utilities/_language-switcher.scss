@@ -1,0 +1,30 @@
+@use "../../abstracts/variables" as *;
+
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.language-switcher__button {
+  padding: 0.2rem;
+  border: 0;
+  background: transparent;
+  color: $color-text-muted;
+  font: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.language-switcher__button:hover {
+  color: $color-primary;
+}
+
+.language-switcher__button--active {
+  color: $color-primary;
+  font-weight: 700;
+}
+
+.language-switcher__separator {
+  color: $color-border;
+}

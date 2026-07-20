@@ -18,7 +18,10 @@
 
 @use "components/projects/project-card";
 @use "components/projects/project-gallery";
+
 @use "components/resume/resume-header";
+
+@use "components/utilities/language-switcher";
 
 @use "sections/hero-section";
 @use "sections/featured-projects-section";

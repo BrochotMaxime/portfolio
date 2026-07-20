@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "Contact | Maxime Brochot",
+    "description": "Contactez Maxime Brochot pour échanger autour d'un projet, d'une opportunité ou de son travail en développement web."
+  },
+  "header": {
+    "title": "Contact",
+    "subtitle": "Vous souhaitez discuter d'un projet, d'une opportunité ou de mon travail ? N'hésitez pas à me contacter."
+  },
+  "card": {
+    "title": "Échangeons",
+    "description": "Vous pouvez me contacter par e-mail, me rejoindre sur LinkedIn ou découvrir mon travail sur GitHub."
+  }
+}

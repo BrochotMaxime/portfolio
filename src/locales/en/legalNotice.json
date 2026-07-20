@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Legal Notice | Maxime Brochot",
+    "description": "Legal information about the personal portfolio website of Maxime Brochot."
+  },
+  "header": {
+    "title": "Legal Notice",
+    "subtitle": "Legal information about this portfolio website."
+  },
+  "publisher": {
+    "title": "Website publisher",
+    "name": "Maxime Brochot"
+  },
+  "purpose": {
+    "title": "Website purpose",
+    "description": "This website is a personal portfolio intended to present web development projects, skills and professional information."
+  },
+  "intellectualProperty": {
+    "title": "Intellectual property",
+    "description": "Unless otherwise stated, all content on this website is owned by Maxime Brochot. Any reproduction or reuse without permission is prohibited."
+  },
+  "contact": {
+    "title": "Contact",
+    "beforeLink": "For any request regarding this website, please use the",
+    "link": "contact page",
+    "afterLink": "."
+  }
+}

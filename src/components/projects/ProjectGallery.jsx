@@ -1,7 +1,9 @@
 import { useCallback, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
+import { useTranslation } from "react-i18next";
 
 function ProjectGallery({ screenshots = [], variant = "gallery" }) {
+  const { t } = useTranslation();
   const [selectedIndex, setSelectedIndex] = useState(null);
 
   const featuredScreenshotIndex = screenshots.findIndex(
@@ -19,6 +21,8 @@ function ProjectGallery({ screenshots = [], variant = "gallery" }) {
 
   const selectedImage =
     selectedIndex !== null ? screenshots[selectedIndex] : null;
+
+  const getScreenshotAlt = (screenshot) => t(screenshot.altKey);
 
   const openLightbox = (index) => {
     setSelectedIndex(index);
@@ -77,12 +81,15 @@ function ProjectGallery({ screenshots = [], variant = "gallery" }) {
           <button
             className="project-gallery__featured-button"
             type="button"
+            aria-label={t("projects.page.gallery.openImage", {
+              description: getScreenshotAlt(featuredScreenshot),
+            })}
             onClick={() => openLightbox(featuredScreenshotIndex)}
           >
             <img
               className="project-gallery__featured-image"
               src={featuredScreenshot.src}
-              alt={featuredScreenshot.alt}
+              alt={getScreenshotAlt(featuredScreenshot)}
             />
           </button>
         )}
@@ -91,6 +98,7 @@ function ProjectGallery({ screenshots = [], variant = "gallery" }) {
           createPortal(
             <ProjectLightbox
               selectedImage={selectedImage}
+              selectedImageAlt={getScreenshotAlt(selectedImage)}
               selectedIndex={selectedIndex}
               screenshotsLength={screenshots.length}
               onClose={closeLightbox}
@@ -112,17 +120,22 @@ function ProjectGallery({ screenshots = [], variant = "gallery" }) {
               (image) => image.src === screenshot.src,
             );
 
+            const screenshotAlt = getScreenshotAlt(screenshot);
+
             return (
               <button
                 className="project-gallery__button"
                 type="button"
                 key={screenshot.src}
+                aria-label={t("projects.page.gallery.openImage", {
+                  description: screenshotAlt,
+                })}
                 onClick={() => openLightbox(screenshotIndex)}
               >
                 <img
                   className="project-gallery__image"
                   src={screenshot.src}
-                  alt={screenshot.alt}
+                  alt={screenshotAlt}
                   loading="lazy"
                 />
               </button>
@@ -135,6 +148,7 @@ function ProjectGallery({ screenshots = [], variant = "gallery" }) {
         createPortal(
           <ProjectLightbox
             selectedImage={selectedImage}
+            selectedImageAlt={getScreenshotAlt(selectedImage)}
             selectedIndex={selectedIndex}
             screenshotsLength={screenshots.length}
             onClose={closeLightbox}
@@ -149,17 +163,21 @@ function ProjectGallery({ screenshots = [], variant = "gallery" }) {
 
 function ProjectLightbox({
   selectedImage,
+  selectedImageAlt,
   selectedIndex,
   screenshotsLength,
   onClose,
   onPrevious,
   onNext,
 }) {
+  const { t } = useTranslation();
+
   return (
     <div
       className="project-lightbox"
       role="dialog"
       aria-modal="true"
+      aria-label={t("projects.page.gallery.dialogLabel")}
       onClick={onClose}
     >
       <div
@@ -169,7 +187,7 @@ function ProjectLightbox({
         <button
           className="project-lightbox__close"
           type="button"
-          aria-label="Close image preview"
+          aria-label={t("projects.page.gallery.close")}
           onClick={onClose}
         >
           ×
@@ -178,7 +196,7 @@ function ProjectLightbox({
         <button
           className="project-lightbox__nav project-lightbox__nav--previous"
           type="button"
-          aria-label="Previous image"
+          aria-label={t("projects.page.gallery.previous")}
           onClick={onPrevious}
         >
           ‹
@@ -187,13 +205,13 @@ function ProjectLightbox({
         <img
           className="project-lightbox__image"
           src={selectedImage.src}
-          alt={selectedImage.alt}
+          alt={selectedImageAlt}
         />
 
         <button
           className="project-lightbox__nav project-lightbox__nav--next"
           type="button"
-          aria-label="Next image"
+          aria-label={t("projects.page.gallery.next")}
           onClick={onNext}
         >
           ›

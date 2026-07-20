@@ -1,0 +1,9 @@
+{
+  "projects": "Projects",
+  "about": "About",
+  "resume": "Resume",
+  "contact": "Contact",
+  "mainLabel": "Main navigation",
+  "mobileLabel": "Mobile navigation",
+  "toggleMenu": "Toggle navigation menu"
+}

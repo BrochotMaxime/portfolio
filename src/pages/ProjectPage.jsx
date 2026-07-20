@@ -1,14 +1,17 @@
+import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import { Link, useParams } from "react-router-dom";
 
+import ProjectGallery from "../components/projects/ProjectGallery";
 import Badge from "../components/ui/Badge";
 import Button from "../components/ui/Button";
 import Card from "../components/ui/Card";
 import SectionTitle from "../components/ui/SectionTitle";
+
 import { projects } from "../data/projects";
-import ProjectGallery from "../components/projects/ProjectGallery";
 
 function ProjectPage() {
+  const { t } = useTranslation();
   const { slug } = useParams();
 
   const project = projects.find((project) => project.slug === slug);
@@ -17,10 +20,10 @@ function ProjectPage() {
     return (
       <>
         <Helmet>
-          <title>Project not found | Maxime Brochot</title>
+          <title>{t("projects.page.notFound.metaTitle")}</title>
           <meta
             name="description"
-            content="The requested project could not be found in Maxime Brochot's portfolio."
+            content={t("projects.page.notFound.metaDescription")}
           />
         </Helmet>
 
@@ -28,12 +31,12 @@ function ProjectPage() {
           <div className="container">
             <SectionTitle
               level="h1"
-              title="Project not found"
-              subtitle="The project you are looking for does not exist."
+              title={t("projects.page.notFound.title")}
+              subtitle={t("projects.page.notFound.subtitle")}
             />
 
             <Link className="project-page__back-link" to="/projects">
-              Back to projects
+              {t("buttons.backToProjects")}
             </Link>
           </div>
         </section>
@@ -41,39 +44,40 @@ function ProjectPage() {
     );
   }
 
+  const title = t(project.titleKey);
+  const description = t(project.cardDescriptionKey);
+
   return (
     <>
       <Helmet>
-        <title>{project.title} | Maxime Brochot</title>
-        <meta name="description" content={project.description} />
+        <title>{`${title} | Maxime Brochot`}</title>
+        <meta name="description" content={description} />
       </Helmet>
 
       <section className="project-page">
         <div className="container">
           <div className="project-page__hero">
-            <SectionTitle
-              level="h1"
-              title={project.title}
-              subtitle={project.description}
-            />
+            <SectionTitle level="h1" title={title} subtitle={description} />
 
-            <ProjectGallery
-              screenshots={project.screenshots}
-              variant="featured"
-            />
+            {project.screenshots.length > 0 && (
+              <ProjectGallery
+                screenshots={project.screenshots}
+                variant="featured"
+              />
+            )}
           </div>
 
           <div className="project-page__sections">
-            {project.overview && (
+            {project.overviewKey && (
               <Card>
-                <h2>Overview</h2>
+                <h2>{t("projects.page.sections.overview")}</h2>
 
-                <p>{project.overview}</p>
+                <p>{t(project.overviewKey)}</p>
               </Card>
             )}
 
             <Card>
-              <h2>Technology stack</h2>
+              <h2>{t("projects.page.sections.technologyStack")}</h2>
 
               <div className="project-page__badges">
                 {project.technologies.map((technology) => (
@@ -82,73 +86,77 @@ function ProjectPage() {
               </div>
             </Card>
 
-            {project.challenges.length > 0 && (
+            {project.challengeKeys?.length > 0 && (
               <Card>
-                <h2>Technical challenges</h2>
+                <h2>{t("projects.page.sections.technicalChallenges")}</h2>
 
                 <ul>
-                  {project.challenges.map((challenge) => (
-                    <li key={challenge}>{challenge}</li>
+                  {project.challengeKeys.map((challengeKey) => (
+                    <li key={challengeKey}>{t(challengeKey)}</li>
                   ))}
                 </ul>
               </Card>
             )}
 
-            {project.architecture && (
+            {project.architectureKey && (
               <Card>
-                <h2>Architecture</h2>
+                <h2>{t("projects.page.sections.architecture")}</h2>
 
-                <p>{project.architecture}</p>
+                <p>{t(project.architectureKey)}</p>
               </Card>
             )}
 
-            {project.lessonsLearned && (
+            {project.lessonsLearnedKey && (
               <Card>
-                <h2>Lessons learned</h2>
+                <h2>{t("projects.page.sections.lessonsLearned")}</h2>
 
-                <p>{project.lessonsLearned}</p>
+                <p>{t(project.lessonsLearnedKey)}</p>
               </Card>
             )}
 
             <Card>
-              <h2>Resources</h2>
+              <h2>{t("projects.page.sections.resources")}</h2>
 
               <div className="project-page__actions">
                 {project.codeUrl && (
                   <Button
                     href={project.codeUrl}
+                    aria-label={t("buttons.aria.viewSourceCode", { title })}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    View code
+                    {t("buttons.viewCode")}
                   </Button>
                 )}
 
                 {project.demoUrl && (
                   <Button
                     href={project.demoUrl}
+                    aria-label={t("buttons.aria.openLiveDemo", { title })}
                     target="_blank"
                     rel="noopener noreferrer"
                     variant="secondary"
                   >
-                    Live demo
+                    {t("buttons.liveDemo")}
                   </Button>
                 )}
               </div>
             </Card>
 
-            <Card>
-              <h2>Screenshots</h2>
+            {project.screenshots.length > 0 && (
+              <Card>
+                <h2>{t("projects.page.sections.screenshots")}</h2>
 
-              <ProjectGallery
-                screenshots={project.screenshots}
-                variant="gallery"
-              />
-            </Card>
+                <ProjectGallery
+                  screenshots={project.screenshots}
+                  variant="gallery"
+                />
+              </Card>
+            )}
           </div>
 
           <Link className="project-page__back-link" to="/projects">
-            Back to projects
+            {t("buttons.backToProjects")}
           </Link>
         </div>
       </section>

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
@@ -5,55 +6,52 @@ import Card from "../components/ui/Card";
 import SectionTitle from "../components/ui/SectionTitle";
 
 function LegalNoticePage() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Helmet>
-        <title>Legal Notice | Maxime Brochot</title>
-        <meta
-          name="description"
-          content="Legal information about the personal portfolio website of Maxime Brochot."
-        />
+        <title>{t("legalNotice.meta.title")}</title>
+
+        <meta name="description" content={t("legalNotice.meta.description")} />
       </Helmet>
 
       <section className="legal-notice-page">
         <div className="container">
           <SectionTitle
             level="h1"
-            title="Legal Notice"
-            subtitle="Legal information about this portfolio website."
+            title={t("legalNotice.header.title")}
+            subtitle={t("legalNotice.header.subtitle")}
           />
 
           <div className="legal-notice-page__content">
             <Card>
-              <h2>Website publisher</h2>
-              <p>Maxime Brochot</p>
+              <h2>{t("legalNotice.publisher.title")}</h2>
+
+              <p>{t("legalNotice.publisher.name")}</p>
             </Card>
 
             <Card>
-              <h2>Website purpose</h2>
-              <p>
-                This website is a personal portfolio intended to present web
-                development projects, skills and professional information.
-              </p>
+              <h2>{t("legalNotice.purpose.title")}</h2>
+
+              <p>{t("legalNotice.purpose.description")}</p>
             </Card>
 
             <Card>
-              <h2>Intellectual property</h2>
-              <p>
-                Unless otherwise stated, all content on this website is owned by
-                Maxime Brochot. Any reproduction or reuse without permission is
-                prohibited.
-              </p>
+              <h2>{t("legalNotice.intellectualProperty.title")}</h2>
+
+              <p>{t("legalNotice.intellectualProperty.description")}</p>
             </Card>
 
             <Card>
-              <h2>Contact</h2>
+              <h2>{t("legalNotice.contact.title")}</h2>
+
               <p>
-                For any request regarding this website, please use the{" "}
+                {t("legalNotice.contact.beforeLink")}{" "}
                 <Link className="legal-notice-page__link" to="/contact">
-                  contact page
+                  {t("legalNotice.contact.link")}
                 </Link>
-                .
+                {t("legalNotice.contact.afterLink")}
               </p>
             </Card>
           </div>

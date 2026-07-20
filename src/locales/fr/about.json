@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "À propos | Maxime Brochot",
+    "description": "Découvrez le parcours de Maxime Brochot, sa manière de travailler, ses qualités et son approche du développement d'applications web."
+  },
+  "header": {
+    "title": "À propos de moi",
+    "subtitle": "Une courte présentation de mon parcours, de mon état d'esprit et de mon approche du développement."
+  },
+  "whoIAm": {
+    "title": "Qui suis-je ?",
+    "paragraph1": "Je suis développeur web et web mobile, avec pour objectif de concevoir des applications claires, maintenables et centrées sur l'utilisateur.",
+    "paragraph2": "Je développe mes compétences au travers de projets concrets, d'un apprentissage structuré et d'une amélioration continue, avec une attention particulière portée à l'architecture, à l'accessibilité et à la qualité du code."
+  },
+  "coreQualities": {
+    "title": "Qualités principales",
+    "curious": "Curieux",
+    "methodical": "Méthodique",
+    "reliable": "Fiable",
+    "adaptable": "Adaptable",
+    "detailOriented": "Soucieux du détail"
+  },
+  "developmentPhilosophy": {
+    "title": "Philosophie de développement",
+    "paragraph1": "Je pense que de bonnes applications reposent sur des décisions réfléchies, une structure claire et une amélioration continue.",
+    "paragraph2": "Chaque projet est une occasion d'améliorer non seulement le résultat final, mais aussi la manière dont il est conçu, documenté et maintenu."
+  }
+}
