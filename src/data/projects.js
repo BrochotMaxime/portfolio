@@ -63,6 +63,48 @@ export const projects = [
   },
   {
     id: 3,
+    slug: "touche-pas-au-klaxon",
+    titleKey: "projects.touchePasAuKlaxon.title",
+    cardDescriptionKey: "projects.touchePasAuKlaxon.cardDescription",
+    screenshots: [
+      {
+        src: "/images/projects/touche-pas-au-klaxon/dashboard.webp",
+        altKey: "projects.touchePasAuKlaxon.screenshots.dashboard",
+        featured: true,
+      },
+      {
+        src: "/images/projects/touche-pas-au-klaxon/admin-dashboard.webp",
+        altKey: "projects.touchePasAuKlaxon.screenshots.adminDashboard",
+      },
+      {
+        src: "/images/projects/touche-pas-au-klaxon/trip-creation.webp",
+        altKey: "projects.touchePasAuKlaxon.screenshots.tripCreation",
+      },
+    ],
+    overviewKey: "projects.touchePasAuKlaxon.overview",
+    technologies: [
+      "PHP",
+      "MariaDB",
+      "HTML",
+      "SCSS",
+      "JavaScript",
+      "Composer",
+    ],
+    challengeKeys: [
+      "projects.touchePasAuKlaxon.challenges.mvcArchitecture",
+      "projects.touchePasAuKlaxon.challenges.authentication",
+      "projects.touchePasAuKlaxon.challenges.businessRules",
+      "projects.touchePasAuKlaxon.challenges.deployment",
+    ],
+    architectureKey: "projects.touchePasAuKlaxon.architecture",
+    lessonsLearnedKey: "projects.touchePasAuKlaxon.lessonsLearned",
+    codeUrl:
+      "https://github.com/BrochotMaxime/brochot-maxime-devoir-touche-pas-au-klaxon",
+    demoUrl: "https://maximebrochot.alwaysdata.net/",
+    featured: true,
+  },
+  {
+    id: 4,
     slug: "port-de-plaisance-russel",
     titleKey: "projects.portDePlaisanceRussel.title",
     cardDescriptionKey: "projects.portDePlaisanceRussel.cardDescription",
@@ -104,7 +146,7 @@ export const projects = [
     featured: false,
   },
   {
-    id: 4,
+    id: 5,
     slug: "tifosi",
     titleKey: "projects.tifosi.title",
     cardDescriptionKey: "projects.tifosi.cardDescription",

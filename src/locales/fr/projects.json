@@ -82,6 +82,31 @@
     "lessonsLearned": "Ce projet a renforcé ma compréhension du développement full-stack et m'a démontré l'importance de concevoir l'architecture d'une application avant d'implémenter les fonctionnalités. Il a également confirmé mon intérêt pour le code propre, les composants réutilisables et le développement incrémental, des principes que j'applique désormais dans chacun de mes projets."
   },
 
+  "touchePasAuKlaxon": {
+    "title": "Touche pas au klaxon",
+  
+    "cardDescription": "Application web développée en PHP selon une architecture MVC. Le projet permet de rechercher, créer et gérer des trajets entre différentes agences, avec authentification, gestion des rôles et déploiement en production.",
+  
+    "overview": "Touche pas au klaxon est une application web développée dans le cadre de ma formation de développeur web. Elle permet aux utilisateurs de rechercher et créer des trajets entre différentes agences, tandis que les administrateurs disposent d'outils dédiés à la gestion des utilisateurs, des agences et des trajets. Développée avec PHP, MariaDB, SCSS et JavaScript selon une architecture MVC, l'application intègre une authentification sécurisée, une gestion des rôles et un mode démonstration pour protéger les données en production.",
+      
+    "screenshots": {
+      "dashboard": "Tableau de bord utilisateur présentant les trajets disponibles.",
+      "adminDashboard": "Tableau de bord d'administration donnant accès aux fonctionnalités de gestion de l'application.",
+      "tripCreation": "Formulaire de création d'un trajet permettant de définir les agences, les dates et le nombre de places disponibles."
+    },
+  
+    "challenges": {
+      "mvcArchitecture": "Concevoir une architecture MVC maintenable avec une séparation claire entre les contrôleurs, les services, les repositories et les vues.",
+      "authentication": "Mettre en place une authentification sécurisée et une gestion des autorisations selon les rôles utilisateur et administrateur.",
+      "businessRules": "Appliquer les règles métier et les validations liées à la création des trajets, à la gestion des agences et aux places disponibles.",
+      "deployment": "Déployer l'application avec Apache et MariaDB, configurer la réécriture des URL et protéger les données de démonstration en production."
+    },
+  
+    "architecture": "L'application suit une architecture MVC complétée par des couches de services et de repositories. Les contrôleurs traitent les requêtes HTTP et coordonnent les différents parcours de l'application, les services contiennent la logique métier et les repositories gèrent les interactions avec la base de données à l'aide de PDO. Les vues sont responsables de l'affichage de l'interface, tandis que le routeur associe les requêtes entrantes aux contrôleurs correspondants. Cette séparation des responsabilités facilite la compréhension, la maintenance et l'évolution de l'application.",
+  
+    "lessonsLearned": "Ce projet a renforcé ma compréhension de PHP orienté objet, de l'architecture MVC et de la séparation des responsabilités au sein d'une application web. Il m'a également apporté une expérience concrète de l'authentification, de la gestion des autorisations, des bases de données relationnelles et du déploiement en production. La phase de déploiement m'a notamment permis de mieux comprendre l'importance de la configuration des environnements, de la portabilité des scripts SQL, de la réécriture des URL et de la protection des données partagées en mode démonstration."
+  },
+
   "portDePlaisanceRussel": {
     "title": "Port de Plaisance Russel",
 

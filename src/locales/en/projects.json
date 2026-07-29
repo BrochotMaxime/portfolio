@@ -82,6 +82,31 @@
     "lessonsLearned": "This project strengthened my understanding of full-stack development and highlighted the importance of planning an application's architecture before implementing features. It also reinforced my appreciation for clean code, reusable components and incremental development, principles that I continue to apply in every new project."
   },
 
+  "touchePasAuKlaxon": {
+    "title": "Touche pas au klaxon",
+  
+    "cardDescription": "Web application developed in PHP using an MVC architecture. The project allows users to search for, create and manage trips between agencies, with authentication, role management and a production deployment.",
+  
+    "overview": "Touche pas au klaxon is a web application developed as part of my web developer training. It allows users to search for, create and manage trips between agencies through dedicated user and administrator dashboards. Built with PHP, MariaDB, SCSS and JavaScript, the project follows an MVC architecture with authentication, role-based access control and a production deployment.",  
+    
+    "screenshots": {
+      "dashboard": "User dashboard showing available trips.",
+      "adminDashboard": "Administration dashboard providing access to application management features.",
+      "tripCreation": "Trip creation form used to define agencies, dates and available seats."
+    },
+  
+    "challenges": {
+      "mvcArchitecture": "Designing a maintainable MVC architecture with a clear separation between controllers, services, repositories and views.",
+      "authentication": "Implementing secure authentication and role-based access control for users and administrators.",
+      "businessRules": "Applying business rules and validation to trip creation, agency management and seat availability.",
+      "deployment": "Deploying the application with Apache and MariaDB, configuring URL rewriting and protecting demonstration data in production."
+    },
+  
+    "architecture": "The application follows an MVC architecture supported by service and repository layers. Controllers handle HTTP requests and coordinate application workflows, services contain business logic, and repositories manage database interactions through PDO. Views are responsible for rendering the user interface, while the router maps incoming requests to the appropriate controllers. This separation of responsibilities makes the application easier to understand, maintain and extend.",
+  
+    "lessonsLearned": "This project strengthened my understanding of object-oriented PHP, MVC architecture and the separation of concerns within a web application. It also gave me practical experience with authentication, authorization, relational database management and production deployment. The deployment phase highlighted the importance of environment configuration, portable database scripts, URL rewriting and protecting shared demonstration data."
+  },
+
   "portDePlaisanceRussel": {
     "title": "Port de Plaisance Russel",
 
