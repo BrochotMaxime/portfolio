@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 
 import Layout from "./components/layout/Layout";
 import HomePage from "./pages/HomePage";
@@ -29,6 +30,8 @@ function App() {
           <Route path="legal-notice" element={<LegalNoticePage />} />
         </Route>
       </Routes>
+
+      <Analytics />
     </>
   );
 }
