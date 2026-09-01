@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Maxime Brochot | Développeur Web",
+    "description": "Portfolio de Maxime Brochot, développeur web et web mobile, présentant des applications claires, maintenables et centrées sur l'utilisateur."
+  },
   "hero": {
     "title": "Maxime Brochot — Développeur Web",
     "subtitle": "Je conçois des applications web claires, maintenables et centrées sur l'utilisateur.",

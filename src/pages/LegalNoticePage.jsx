@@ -1,20 +1,21 @@
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 import Card from "../components/ui/Card";
 import SectionTitle from "../components/ui/SectionTitle";
+
+import Seo from "../components/utilities/Seo";
 
 function LegalNoticePage() {
   const { t } = useTranslation();
 
   return (
     <>
-      <Helmet>
-        <title>{t("legalNotice.meta.title")}</title>
-
-        <meta name="description" content={t("legalNotice.meta.description")} />
-      </Helmet>
+      <Seo
+        title={t("legalNotice.meta.title")}
+        description={t("legalNotice.meta.description")}
+        path="/legal-notice"
+      />
 
       <section className="legal-notice-page">
         <div className="container">

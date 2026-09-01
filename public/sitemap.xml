@@ -2,38 +2,46 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://your-domain.com/</loc>
+    <loc>https://maxime-brochot.dev/</loc>
   </url>
 
   <url>
-    <loc>https://your-domain.com/about</loc>
+    <loc>https://maxime-brochot.dev/about</loc>
   </url>
 
   <url>
-    <loc>https://your-domain.com/projects</loc>
+    <loc>https://maxime-brochot.dev/projects</loc>
   </url>
 
   <url>
-    <loc>https://your-domain.com/projects/portfolio</loc>
+    <loc>https://maxime-brochot.dev/projects/portfolio</loc>
   </url>
 
   <url>
-    <loc>https://your-domain.com/projects/trouve-ton-artisan</loc>
+    <loc>https://maxime-brochot.dev/projects/trouve-ton-artisan</loc>
   </url>
 
   <url>
-    <loc>https://your-domain.com/projects/port-de-plaisance-russell</loc>
+    <loc>https://maxime-brochot.dev/projects/port-de-plaisance-russell</loc>
   </url>
 
   <url>
-    <loc>https://your-domain.com/projects/tifosi</loc>
+    <loc>https://maxime-brochot.dev/projects/tifosi</loc>
   </url>
 
   <url>
-    <loc>https://your-domain.com/contact</loc>
+    <loc>https://maxime-brochot.dev/projects/touche-pas-au-klaxon</loc>
   </url>
 
   <url>
-    <loc>https://your-domain.com/legal-notice</loc>
+    <loc>https://maxime-brochot.dev/resume</loc>
+  </url>
+
+  <url>
+    <loc>https://maxime-brochot.dev/contact</loc>
+  </url>
+
+  <url>
+    <loc>https://maxime-brochot.dev/legal-notice</loc>
   </url>
 </urlset>

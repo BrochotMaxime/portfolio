@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Maxime Brochot | Web Developer",
+    "description": "Portfolio of Maxime Brochot, Web and Mobile Web Developer, showcasing clear, maintainable and user-focused applications."
+  },
   "hero": {
     "title": "Maxime Brochot — Web Developer",
     "subtitle": "Building clear, maintainable and user-focused web applications.",

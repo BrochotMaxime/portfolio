@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
 
 import SectionTitle from "../components/ui/SectionTitle";
 import ProjectCard from "../components/projects/ProjectCard";
+import Seo from "../components/utilities/Seo";
 
 import { projects } from "../data/projects";
 
@@ -11,13 +11,11 @@ function ProjectsPage() {
 
   return (
     <>
-      <Helmet>
-        <title>{t("projects.page.meta.title")}</title>
-        <meta
-          name="description"
-          content={t("projects.page.meta.description")}
-        />
-      </Helmet>
+      <Seo
+        title={t("projects.page.meta.title")}
+        description={t("projects.page.meta.description")}
+        path="/projects"
+      />
 
       <section className="projects-page">
         <div className="container">
