@@ -1,12 +1,14 @@
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
 import { Link, useParams } from "react-router-dom";
 
 import ProjectGallery from "../components/projects/ProjectGallery";
+
 import Badge from "../components/ui/Badge";
 import Button from "../components/ui/Button";
 import Card from "../components/ui/Card";
 import SectionTitle from "../components/ui/SectionTitle";
+
+import Seo from "../components/utilities/Seo";
 
 import { projects } from "../data/projects";
 
@@ -19,13 +21,11 @@ function ProjectPage() {
   if (!project) {
     return (
       <>
-        <Helmet>
-          <title>{t("projects.page.notFound.metaTitle")}</title>
-          <meta
-            name="description"
-            content={t("projects.page.notFound.metaDescription")}
-          />
-        </Helmet>
+        <Seo
+          title={t("projects.page.notFound.metaTitle")}
+          description={t("projects.page.notFound.metaDescription")}
+          path="/projects"
+        />
 
         <section className="project-page">
           <div className="container">
@@ -49,10 +49,11 @@ function ProjectPage() {
 
   return (
     <>
-      <Helmet>
-        <title>{`${title} | Maxime Brochot`}</title>
-        <meta name="description" content={description} />
-      </Helmet>
+      <Seo
+        title={`${title} | Maxime Brochot`}
+        description={description}
+        path={`/projects/${project.slug}`}
+      />
 
       <section className="project-page">
         <div className="container">

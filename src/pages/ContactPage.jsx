@@ -1,13 +1,13 @@
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
 import { Mail, Download } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
-
-import getResumePath from "../components/utilities/getResumePath";
 
 import Button from "../components/ui/Button";
 import Card from "../components/ui/Card";
 import SectionTitle from "../components/ui/SectionTitle";
+
+import getResumePath from "../components/utilities/getResumePath";
+import Seo from "../components/utilities/Seo";
 
 function ContactPage() {
   const { t, i18n } = useTranslation();
@@ -16,10 +16,11 @@ function ContactPage() {
 
   return (
     <>
-      <Helmet>
-        <title>{t("contact.meta.title")}</title>
-        <meta name="description" content={t("contact.meta.description")} />
-      </Helmet>
+      <Seo
+        title={t("contact.meta.title")}
+        description={t("contact.meta.description")}
+        path="/contact"
+      />
 
       <section className="contact-page">
         <div className="container">

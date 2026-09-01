@@ -1,19 +1,21 @@
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
 
 import Badge from "../components/ui/Badge";
 import Card from "../components/ui/Card";
 import SectionTitle from "../components/ui/SectionTitle";
+
+import Seo from "../components/utilities/Seo";
 
 function AboutPage() {
   const { t } = useTranslation();
 
   return (
     <>
-      <Helmet>
-        <title>{t("about.meta.title")}</title>
-        <meta name="description" content={t("about.meta.description")} />
-      </Helmet>
+      <Seo
+        title={t("about.meta.title")}
+        description={t("about.meta.description")}
+        path="/about"
+      />
 
       <section className="about-page">
         <div className="container">

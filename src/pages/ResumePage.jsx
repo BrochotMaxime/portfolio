@@ -1,20 +1,23 @@
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 import ResumeHeader from "../components/resume/ResumeHeader";
+
 import Badge from "../components/ui/Badge";
 import Card from "../components/ui/Card";
+
+import Seo from "../components/utilities/Seo";
 
 function ResumePage() {
   const { t } = useTranslation();
 
   return (
     <>
-      <Helmet>
-        <title>{t("resume.meta.title")}</title>
-        <meta name="description" content={t("resume.meta.description")} />
-      </Helmet>
+      <Seo
+        title={t("resume.meta.title")}
+        description={t("resume.meta.description")}
+        path="/resume"
+      />
 
       <section className="resume-page">
         <div className="container">

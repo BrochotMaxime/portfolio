@@ -1,14 +1,18 @@
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
+
+import Seo from "../components/utilities/Seo";
 
 function ResumePrintPage() {
   const { t } = useTranslation();
 
   return (
     <>
-      <Helmet>
-        <title>{t("resume.meta.printTitle")}</title>
-      </Helmet>
+      <Seo
+        title={t("resume.meta.printTitle")}
+        description={t("resume.meta.description")}
+        path="/resume"
+        noIndex
+      />
 
       <main className="resume-print">
         <header className="resume-print__header">
