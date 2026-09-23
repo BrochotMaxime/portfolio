@@ -82,28 +82,53 @@
     "lessonsLearned": "This project strengthened my understanding of full-stack development and highlighted the importance of planning an application's architecture before implementing features. It also reinforced my appreciation for clean code, reusable components and incremental development, principles that I continue to apply in every new project."
   },
 
+  "guildWarsArmory": {
+    "title": "Guild Wars Armory",
+
+    "cardDescription": "React application designed to plan the acquisition of Guild Wars armor sets, review their crafting costs and calculate the materials still needed based on the player's inventory.",
+
+    "overview": "Guild Wars Armory is a planning application designed to help Guild Wars players prepare for the acquisition of an armor set. Users can browse available armor by profession and campaign, review crafting costs and locations, and compare the required materials with their current inventory. The application also calculates the additional resources needed to craft missing rare materials, providing a complete estimate of the player's actual requirements.",
+
+    "screenshots": {
+      "workflow": "Initial Guild Wars Armory screen used to select a profession.",
+      "armorDetails": "Armor details showing male and female previews, the crafting location and required materials.",
+      "materialChecklist": "Material checklist used to enter owned resources and calculate missing quantities."
+    },
+
+    "challenges": {
+      "dataModel": "Designing a local data model capable of representing professions, campaigns, armor sets, materials, crafting recipes and acquisition methods.",
+      "craftingCalculations": "Recursively calculating and aggregating the resources required to craft rare materials without deducting the same inventory more than once.",
+      "accessibleWorkflow": "Building a progressive and responsive workflow that can be completed entirely with a keyboard and is covered by automated accessibility tests.",
+      "productionRelease": "Preparing a complete production release with tests, documentation, SEO metadata, a custom domain, HTTPS and search indexing configuration."
+    },
+
+    "architecture": "The application uses a React architecture driven by local static data. Components handle the interface and receive data through props, while reusable hooks centralize workflow navigation and planning state. Business calculations are isolated in tested pure utility functions, including missing-material calculations, recursive crafting recipe expansion and aggregation of actual requirements. This separation allows new armor sets and materials to be introduced primarily through data without adding item-specific application logic.",
+
+    "lessonsLearned": "This project gave me the opportunity to take a personal application from its functional definition through to its production release. It strengthened my understanding of React, data modelling and the separation between interface and business logic. Working on testing, accessibility, responsive design, documentation, search optimization and deployment also demonstrated that a finished application depends not only on its features, but on the quality of its complete user experience and delivery process."
+  },
+
   "touchePasAuKlaxon": {
     "title": "Touche pas au klaxon",
-  
+
     "cardDescription": "Web application developed in PHP using an MVC architecture. The project allows users to search for, create and manage trips between agencies, with authentication, role management and a production deployment.",
-  
-    "overview": "Touche pas au klaxon is a web application developed as part of my web developer training. It allows users to search for, create and manage trips between agencies through dedicated user and administrator dashboards. Built with PHP, MariaDB, SCSS and JavaScript, the project follows an MVC architecture with authentication, role-based access control and a production deployment.",  
-    
+
+    "overview": "Touche pas au klaxon is a web application developed as part of my web developer training. It allows users to search for, create and manage trips between agencies through dedicated user and administrator dashboards. Built with PHP, MariaDB, SCSS and JavaScript, the project follows an MVC architecture with authentication, role-based access control and a production deployment.",
+
     "screenshots": {
       "dashboard": "User dashboard showing available trips.",
       "adminDashboard": "Administration dashboard providing access to application management features.",
       "tripCreation": "Trip creation form used to define agencies, dates and available seats."
     },
-  
+
     "challenges": {
       "mvcArchitecture": "Designing a maintainable MVC architecture with a clear separation between controllers, services, repositories and views.",
       "authentication": "Implementing secure authentication and role-based access control for users and administrators.",
       "businessRules": "Applying business rules and validation to trip creation, agency management and seat availability.",
       "deployment": "Deploying the application with Apache and MariaDB, configuring URL rewriting and protecting demonstration data in production."
     },
-  
+
     "architecture": "The application follows an MVC architecture supported by service and repository layers. Controllers handle HTTP requests and coordinate application workflows, services contain business logic, and repositories manage database interactions through PDO. Views are responsible for rendering the user interface, while the router maps incoming requests to the appropriate controllers. This separation of responsibilities makes the application easier to understand, maintain and extend.",
-  
+
     "lessonsLearned": "This project strengthened my understanding of object-oriented PHP, MVC architecture and the separation of concerns within a web application. It also gave me practical experience with authentication, authorization, relational database management and production deployment. The deployment phase highlighted the importance of environment configuration, portable database scripts, URL rewriting and protecting shared demonstration data."
   },
 

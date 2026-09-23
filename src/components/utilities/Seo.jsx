@@ -24,17 +24,13 @@ function Seo({
 
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
-      {description && (
-        <meta property="og:description" content={description} />
-      )}
+      {description && <meta property="og:description" content={description} />}
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={image} />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
-      {description && (
-        <meta name="twitter:description" content={description} />
-      )}
+      {description && <meta name="twitter:description" content={description} />}
       <meta name="twitter:image" content={image} />
     </Helmet>
   );
