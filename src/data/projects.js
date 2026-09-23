@@ -62,6 +62,41 @@ export const projects = [
     featured: true,
   },
   {
+    id: 6,
+    slug: "guild-wars-armory",
+    titleKey: "projects.guildWarsArmory.title",
+    cardDescriptionKey: "projects.guildWarsArmory.cardDescription",
+    screenshots: [
+      {
+        src: "/images/projects/guild-wars-armory/workflow.webp",
+        altKey: "projects.guildWarsArmory.screenshots.workflow",
+        featured: true,
+      },
+      {
+        src: "/images/projects/guild-wars-armory/armor-details.webp",
+        altKey: "projects.guildWarsArmory.screenshots.armorDetails",
+      },
+      {
+        src: "/images/projects/guild-wars-armory/material-checklist.webp",
+        altKey: "projects.guildWarsArmory.screenshots.materialChecklist",
+      },
+    ],
+    overviewKey: "projects.guildWarsArmory.overview",
+    technologies: ["React", "Vite", "JavaScript", "Sass", "Vitest", "axe-core"],
+    challengeKeys: [
+      "projects.guildWarsArmory.challenges.dataModel",
+      "projects.guildWarsArmory.challenges.craftingCalculations",
+      "projects.guildWarsArmory.challenges.accessibleWorkflow",
+      "projects.guildWarsArmory.challenges.productionRelease",
+    ],
+    architectureKey: "projects.guildWarsArmory.architecture",
+    lessonsLearnedKey: "projects.guildWarsArmory.lessonsLearned",
+    codeUrl: "https://github.com/BrochotMaxime/guild-wars-armory",
+    demoUrl: "https://guildwarsarmory.com/",
+    featured: true,
+  },
+
+  {
     id: 3,
     slug: "touche-pas-au-klaxon",
     titleKey: "projects.touchePasAuKlaxon.title",
@@ -82,14 +117,7 @@ export const projects = [
       },
     ],
     overviewKey: "projects.touchePasAuKlaxon.overview",
-    technologies: [
-      "PHP",
-      "MariaDB",
-      "HTML",
-      "SCSS",
-      "JavaScript",
-      "Composer",
-    ],
+    technologies: ["PHP", "MariaDB", "HTML", "SCSS", "JavaScript", "Composer"],
     challengeKeys: [
       "projects.touchePasAuKlaxon.challenges.mvcArchitecture",
       "projects.touchePasAuKlaxon.challenges.authentication",
